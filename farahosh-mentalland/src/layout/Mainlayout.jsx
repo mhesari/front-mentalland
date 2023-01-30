@@ -19,7 +19,7 @@ const MainLayout = ({children})=>{
     return(
         <CacheProvider value={rtlcache}>
             <ThemeProvider theme={currentTheme.palette.mode=="dark"?DarkTheme:LightTheme}>
-                <Grid container sx={{height:"100vh" , overflowX:"hidden",overflowY:"hidden"}}>
+                <Grid container sx={{height:"100vh" , overflowX:"hidden",overflowY:"scroll"}}>
                     {children}
                 </Grid>
             </ThemeProvider>

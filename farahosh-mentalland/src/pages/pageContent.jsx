@@ -1,5 +1,6 @@
-import { Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Grid from "@mui/material/Unstable_Grid2";
+import Home from "./Routes/Routes/Home";
 
 const Nopage =() => {
   
@@ -17,6 +18,7 @@ const PageContent = ()=>{
         <Grid  xs={12} sm={12} md={12} lg={12} xl={12}>
             <Routes>
                 {/*   Route   */}
+                <Route index element={<Home/>} />
             </Routes>
         </Grid>
     )
