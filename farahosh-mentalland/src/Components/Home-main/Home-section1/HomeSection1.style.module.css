@@ -2,6 +2,9 @@
     width: 100%;
     height: 1250px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .Slider{
     width: 1440px;
@@ -141,18 +144,21 @@ background: url("../../../assests/image/Rectangle 48.png");
 .servic1pic,
 .servic2pic,
 .servic3pic{
-
     filter: invert(62%) sepia(93%) saturate(5178%) hue-rotate(166deg) brightness(102%) contrast(101%);
 }
 .servic1:hover,
 .servic2:hover,
 .servic3:hover{
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 75%, 50% 93%, 39% 75%, 0% 75%);
-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 75%, 50% 93%, 39% 75%, 0% 75%);
-
-
-
-height: 400px;
-background: #02979D;
-border-radius: 25.3977px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 75%, 50% 93%, 39% 75%, 0% 75%);
+    height: 400px;
+    background: #02979D;
+    border-radius: 25.3977px;
+}
+.servic1:hover > .servic1pic,
+.servic2:hover > .servic2pic,
+.servic3:hover > .servic3pic{
+    filter:  brightness(0) invert(1);
+    /* filter: invert(0.5); */
+    /* filter: invert(98%) sepia(100%) saturate(3%) hue-rotate(196deg) brightness(107%) contrast(100%); */
 }
