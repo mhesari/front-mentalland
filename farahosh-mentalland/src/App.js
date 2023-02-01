@@ -5,7 +5,8 @@ import MainLayout from './layout/Mainlayout';
 import PageContainer from './pages/pageContainer';
 import Fixnav from "./Components/common/header/Fixnav"
 import Footer from "./Components/common/footer/Footer"
-
+import TopNav from "./Components/common/header/navbar/Appbar"
+import Sidebar from "./Components/common/header/sidebar/Sidebar"
 function App() {
   const [mode , setMode] = useState("light")
   const [drawerOpen,setDrawerOpen] = useState(false)
@@ -26,7 +27,8 @@ function App() {
       }}>
        
         <MainLayout>
-            <Fixnav />
+            <TopNav />
+            <Sidebar />
             <PageContainer />  
             <Footer />
         </MainLayout>

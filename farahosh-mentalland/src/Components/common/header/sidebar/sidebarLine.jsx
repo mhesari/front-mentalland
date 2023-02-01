@@ -9,7 +9,7 @@ const SidebarLine = ()=>{
             md:"block",
             lg:"block",
             xl:"block"
-        }, width:"100vw" , background:"white" , position:"sticky" , top:"0",zIndex:"9999"}}>
+        }, width:"100vw" , background:"white" }}>
          
            <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-between" ,paddingRight:"40px" , paddingLeft:"60px" }}>
            <Typography variant="h5" sx={{cursor:"pointer"}}>MentalLands</Typography>
