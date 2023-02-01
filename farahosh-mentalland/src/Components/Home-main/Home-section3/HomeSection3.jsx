@@ -13,7 +13,7 @@ const Homesection3 = () => {
             </div>
             <div className={styles.section3_card}>
                 <Grid className="flex" direction="row"
-             justifyContent="center"
+             justifyContent="space-between"
   alignItems="center">
                     <div className={styles.card}>
                         <img className={styles.card_header} src={pic1} alt="" />
