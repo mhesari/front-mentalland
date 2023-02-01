@@ -1,8 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 import { grey , red} from "@mui/material/colors";
 
-export const LightTheme = createTheme({
-    direction:"rtl",
+export const theme = createTheme({
     palette:{
         mode:"light",
         primary: {
@@ -29,16 +28,5 @@ export const LightTheme = createTheme({
           }
 
     },
-    typography:{
-        fontFamily:"IRANSansX"
-    }
-})
-export const DarkTheme = createTheme({
-    direction:"rtl",
-    palette:{
-        mode:"dark",
-    },
-    typography:{
-        fontFamily:"tanha , vazir , roboto"
-    }
+   
 })

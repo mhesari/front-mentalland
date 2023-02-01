@@ -3,8 +3,8 @@ import MainContext from "./context"
 import { useState } from 'react';
 import MainLayout from './layout/Mainlayout';
 import PageContainer from './pages/pageContainer';
-
-
+import Fixnav from "./Components/common/header/Fixnav"
+import Footer from "./Components/common/footer/Footer"
 
 function App() {
   const [mode , setMode] = useState("light")
@@ -26,7 +26,9 @@ function App() {
       }}>
        
         <MainLayout>
+            <Fixnav />
             <PageContainer />  
+            <Footer />
         </MainLayout>
       </MainContext.Provider>
     
