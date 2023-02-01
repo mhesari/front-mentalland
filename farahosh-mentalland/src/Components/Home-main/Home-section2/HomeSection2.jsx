@@ -1,10 +1,10 @@
-import { Button, Grid } from "@mui/material";
+import {  Grid } from "@mui/material";
 import Pic1 from "../../../assests/image/Group 761.png";
 import Pic2 from "../../../assests/image/Group 762.png";
 import Pic3 from "../../../assests/image/Group 763.png";
 import Pic4 from "../../../assests/image/Group 764.png";
 import styles from "./HomeSection2.style.module.css"
-
+import Button from "../../buttons/button.component";
 
 const Homesection2 = () => {
     return ( 
@@ -31,8 +31,8 @@ mental website in iran</p>
 and expanded</p>
                 </div>
             </Grid>
-            <div className="w-full flex flex-col align-middle items-center">
-            <Button variant="contained" className={styles.section2_button}>Learn more</Button>
+            <div className="w-full flex flex-col align-middle items-center mt-20">
+            <Button>Learn more</Button>
             </div>
             
             </div>
