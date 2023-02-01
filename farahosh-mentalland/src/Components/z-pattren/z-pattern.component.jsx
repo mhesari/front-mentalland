@@ -1,17 +1,16 @@
-
-import styles from "./z_pattren.styles.module.css"
+import "./z-pattern.styles.css"
 
 const Z_PATTERN_TYPE_CLASSES = {
-    zPatternRtl: "z_pattern_rtl",
-    zPatternLtr: "z_pattern_ltr",
+    zPatternRtl: "z-pattern-rtl",
+    zPatternLtr: "z-pattern-ltr",
 }
 
 
 const ZPattern = ({children, zPatternType, ...otherProps }) => {
-const zpatrren = Z_PATTERN_TYPE_CLASSES[zPatternType];
+
     return (
         
-        <div className={styles[zpatrren]}
+        <div className={`z-pattern-container ${Z_PATTERN_TYPE_CLASSES[zPatternType]}`}
         >
             {children}
         </div>

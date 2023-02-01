@@ -35,6 +35,11 @@
       url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
   }
   @font-face {
+    font-family: "Gilroy-SemiBold";   /*Can be any text*/
+    src: local("Gilroy-SemiBold"),
+      url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
     font-family: "Gilroy-ExtraBoldItalic";   /*Can be any text*/
     src: local("Gilroy-ExtraBoldItalic"),
       url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf") format("truetype");
@@ -58,6 +63,11 @@
     font-family: "Gilroy-Medium";   /*Can be any text*/
     src: local("Gilroy-Medium"),
       url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Gilroy-Thin";   /*Can be any text*/
+    src: local("Gilroy-Thin"),
+      url("../fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
   }
 
 
