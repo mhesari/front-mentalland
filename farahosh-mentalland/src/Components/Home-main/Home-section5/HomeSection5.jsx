@@ -5,25 +5,62 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import pic1Card from "../../../assests/image/Ellipse 5.png";
 import styles from "./HomeSection5.style.module.css";
+import "./slidertoggle.style.css";
+
 
 const Homesection5 = () => {
     return ( 
         <div>
+            <div className={styles.section5}>
+            <div className={styles.section5_slidertext}>
             <h3>What Our Patients Say</h3>
             <p>Lorem ipsum dolor sit amet consectetur. Ut turpis nunc ac felis sapien diam. Sed velit dignissim viverra natoque. Ut mattis egestas </p>
-            <div>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide>
+            </div>
+            <Swiper  spaceBetween={5} slidesPerView={3} navigation={true} modules={[Navigation]} className={styles.mySwiper}>
+            <SwiperSlide className={styles.card}>
                 <div className={styles.section5_card}>
                     <img alt="" src={pic1Card} />
                     <h5>Benjamin Smith</h5>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque risus nulla viverra orci tristique magna et. Sagittis enim ut gravida sed volutpat est arcu vitae ....</p>
+                    <div className="flex flex-row align-middle justify-between w-full px-5">
+                        <p className={styles.section5_carddate}>October 9</p>
+                        <p className={styles.section5_carddate}>Psychology</p>
+                    </div>
+                    <p className={styles.section_cardtext}>Lorem ipsum dolor sit amet consectetur. Scelerisque risus nulla viverra orci tristique magna et. Sagittis enim ut gravida sed volutpat est arcu vitae ....</p>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>
+            <div className={styles.section5_card}>
+                    <img alt="" src={pic1Card} />
+                    <h5>Benjamin Smith</h5>
+                    <div className="flex flex-row align-middle justify-between w-full px-5">
+                        <p className={styles.section5_carddate}>October 9</p>
+                        <p className={styles.section5_carddate}>Psychology</p>
+                    </div>
+                    <p className={styles.section_cardtext}>Lorem ipsum dolor sit amet consectetur. Scelerisque risus nulla viverra orci tristique magna et. Sagittis enim ut gravida sed volutpat est arcu vitae ....</p>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className={styles.section5_card}>
+                    <img alt="" src={pic1Card} />
+                    <h5>Benjamin Smith</h5>
+                    <div className="flex flex-row align-middle justify-between w-full px-5">
+                        <p className={styles.section5_carddate}>October 9</p>
+                        <p className={styles.section5_carddate}>Psychology</p>
+                    </div>
+                    <p className={styles.section_cardtext}>Lorem ipsum dolor sit amet consectetur. Scelerisque risus nulla viverra orci tristique magna et. Sagittis enim ut gravida sed volutpat est arcu vitae ....</p>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className={styles.section5_card}>
+                    <img alt="" src={pic1Card} />
+                    <h5>Benjamin Smith</h5>
+                    <div className="flex flex-row align-middle justify-between w-full p-2">
+                        <p className={styles.section5_carddate}>October 9</p>
+                        <p className={styles.section5_carddate}>Psychology</p>
+                    </div>
+                    <p className={styles.section_cardtext}>Lorem ipsum dolor sit amet consectetur. Scelerisque risus nulla viverra orci tristique magna et. Sagittis enim ut gravida sed volutpat est arcu vitae ....</p>
+                </div>
+            </SwiperSlide>
             </Swiper>
             </div>
         </div>
