@@ -19,7 +19,7 @@ const SidebarDrawer = ()=>{
                     md:"none",
                     lg:"none",
                     xl:"none"
-                }
+                },zIndex:"99999"
             }}
         >
             <SidebarContent />

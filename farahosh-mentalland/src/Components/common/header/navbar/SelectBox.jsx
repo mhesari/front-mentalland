@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Box , InputLabel, MenuItem , FormControl , Select , Avatar} from '@mui/material';
+import {Box , InputLabel, MenuItem , FormControl , Select , Avatar, Typography} from '@mui/material';
 import flag from "../../../../assests/img/En.png"
 
 export default function BasicSelect() {
@@ -12,7 +12,7 @@ export default function BasicSelect() {
   return (
     <Box>
       <FormControl fullWidth sx={{minWidth:"90px"}}>
-        <InputLabel id="demo-simple-select-label" sx={{display:"flex",alignItems:"center" , justifyContent:"flex-start"}}><Avatar src={flag} sx={{width:"15px",height:"15px"}}/>{" "} EN</InputLabel>
+        <InputLabel id="demo-simple-select-label" sx={{display:"flex",alignItems:"center" , justifyContent:"flex-start"}}><Avatar src={flag} sx={{width:"15px",height:"15px"}}/>{" "} <Typography sx={{fontFamily:"Gilroy-Regular"}}>EN</Typography></InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"

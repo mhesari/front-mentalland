@@ -7,6 +7,7 @@ import Fixnav from "./Components/common/header/Fixnav"
 import Footer from "./Components/common/footer/Footer"
 import TopNav from "./Components/common/header/navbar/Appbar"
 import Sidebar from "./Components/common/header/sidebar/Sidebar"
+import {Box} from "@mui/material"
 function App() {
   const [mode , setMode] = useState("light")
   const [drawerOpen,setDrawerOpen] = useState(false)
@@ -27,8 +28,11 @@ function App() {
       }}>
        
         <MainLayout>
-            <TopNav />
-            <Sidebar />
+            
+            <Box component="div" sx={{position:"fixed" ,top:"0",left:"0" , zIndex:"9999"}}>
+              <TopNav />
+              <Sidebar />
+            </Box>
             <PageContainer />  
             <Footer />
         </MainLayout>
