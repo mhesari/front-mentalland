@@ -70,7 +70,7 @@ const HomeSection1 = () => {
         </div>
         <div className="flex flex-col align-middle justify-items-start items-center w-full">
             
-               <h3>OUR PROFESSIONAL SERVICES</h3>
+               <h3 className={styles.section1_servicesTitle}>OUR PROFESSIONAL SERVICES</h3>
                <div className={styles.servicContext}> 
                <Grid container
                     direction="row"
