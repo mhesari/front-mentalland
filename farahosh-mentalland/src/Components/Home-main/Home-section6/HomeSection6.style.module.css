@@ -1,0 +1,37 @@
+.section6_title{
+    width: 673.93px;
+height: 46.99px;
+font-family: 'Gilroy-SemiBold';
+font-size: 30px;
+line-height: 45px;
+text-transform: uppercase;
+margin-left: 100px;
+
+color: #000B0C;
+}
+.section6_list{
+    height: 559px;
+}
+.section6_accordion{
+    margin-bottom: 40px !important;
+    width: 1029.9px;
+padding: 18px;
+    background: rgba(255, 255, 255, 0.03);
+backdrop-filter: blur(4px);
+
+border-radius: 15px !important;
+border: 1px solid;
+border-color:  #02979D;
+
+
+}
+.Accordion_title{
+    font-family:  "Gilroy-Regular";
+    font-size: 18px;
+line-height: 40px;
+
+text-transform: capitalize;
+
+color: #000B0C;
+}
+
