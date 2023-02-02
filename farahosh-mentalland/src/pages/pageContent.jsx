@@ -2,6 +2,7 @@ import { Route, Routes} from "react-router-dom";
 import Grid from "@mui/material/Unstable_Grid2";
 import Home from "./Routes/Home";
 import Page2 from "./Routes/page2";
+import Art from "./Routes/Arts";
 
 const Nopage =() => {
   
@@ -22,6 +23,7 @@ const PageContent = ()=>{
                 <Route index element={<Home/>} />
                 <Route path="*" element={ <Nopage/> }/>
                 <Route path="Page2" element={ <Page2/> }/>
+                <Route path="Art" element={ <Art/> }/>
             </Routes>
         </Grid>
     )

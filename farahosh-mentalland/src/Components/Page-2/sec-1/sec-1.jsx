@@ -1,5 +1,4 @@
 import styles from "./sec1.module.css";
-import Person1 from "../../../assests/image/backgroundsec1.png";
 
 const Sec1 = () => {
     return (
