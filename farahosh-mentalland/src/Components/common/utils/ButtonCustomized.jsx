@@ -5,7 +5,7 @@ export const ButtonCustomised = styled(Button)(({theme})=>({
     fontFamily:"Gilroy-Bold",
     borderRadius:"35px",
     margin:"0px auto",
-    fontSize:"18px",
+    fontSize:{lg:"18px",xs:"10px"},
     color:"#00888D",
     "&:hover":{
         background:"white",
