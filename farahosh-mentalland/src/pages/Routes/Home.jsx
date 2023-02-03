@@ -14,7 +14,7 @@ const Home = () => {
             <HomeSection1 />
             <Homesection2 />
             <HomeSection3 />
-            {/* <Homesection4 /> */}
+            <Homesection4 />
             <Homesection5 />
             <Homesection6 />
         </Fragment>
