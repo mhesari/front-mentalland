@@ -21,11 +21,11 @@ const PageContent = ()=>{
         <Grid  xs={12} sm={12} md={12} lg={12} xl={12}>
             <Routes>
                 {/*   Route   */}
-                {/* <Route index element={<Home/>} /> */}
+                <Route index element={<Home/>} />
                 <Route path="*" element={ <Nopage/> }/>
                 <Route path="Page2" element={ <Page2/> }/>
                 <Route path="Art" element={ <Art/> }/>
-                <Route index  patch="smallpage" element={ <PageBusiness/> }/>
+                <Route patch="smallpage" element={ <PageBusiness/> }/>
             </Routes>
         </Grid>
     )
