@@ -162,6 +162,7 @@ background: url("../../../assests/image/Rectangle 48.png");
     /* filter: invert(98%) sepia(100%) saturate(3%) hue-rotate(196deg) brightness(107%) contrast(100%); */
 }
 .section1_servicesTitle{
+    margin-top: 150px;
     font-family: 'alice-regular';
     font-style: normal;
 font-weight: 400;
@@ -172,4 +173,23 @@ text-align: center;
 text-transform: uppercase;
 
 color: #000B0C;
+}
+.serviceContext{
+    margin-top: 10%;
+    display: flex;
+    width: 1240px;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+   
+}
+.serviceContext p{
+    width: 610px;
+height: 374px;
+
+font-family: 'Gilroy-Regular';
+font-size: 21px;
+line-height: 40px;
+color: #000B0C;
+
 }

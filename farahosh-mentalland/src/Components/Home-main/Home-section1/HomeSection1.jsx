@@ -13,6 +13,9 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Heart from "../../../assests/image/Group 775.svg";
 import Business from "../../../assests/image/Group 774.svg";
 import Art from "../../../assests/image/Group 773.svg";
+import Button from "../../buttons/button.component";
+import picOfService from "../../../assests/image/Rectangle 11.png";
+
 
 const HomeSection1 = () => {
     return ( 
@@ -90,6 +93,13 @@ const HomeSection1 = () => {
             
                 </div>
             </Grid>
+            <div className={styles.serviceContext}>
+                <div className=" flex flex-col  justify-between align-middle">
+                    <p>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.</p>
+                    <Button>learn more</Button>
+                </div>
+                <img alt="" src={picOfService} />
+            </div>
 
                </div>
         </div>
