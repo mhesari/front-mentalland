@@ -69,7 +69,11 @@
     src: local("Gilroy-Thin"),
       url("../fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
   }
-
+  @font-face {
+    font-family: "Gilroy-UltraLight";   /*Can be any text*/
+    src: local("Gilroy-UltraLight"),
+      url("../fonts/Gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  }
 
 
 

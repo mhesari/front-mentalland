@@ -3,7 +3,7 @@ import Sec6pic from "../../../assests/image/sec-6.png"
 import Stack from '@mui/material/Stack';
 import ZPattern from "../../z-pattren/z-pattern.component"
 
-const Sec6 = () => {
+const Sec4 = () => {
     return (
         <div className={styles.sectionsContainer}>
             <ZPattern zPatternType="zPatternLtr" >
@@ -33,4 +33,4 @@ const Sec6 = () => {
     )
 }
 
-export default Sec6;
+export default Sec4;

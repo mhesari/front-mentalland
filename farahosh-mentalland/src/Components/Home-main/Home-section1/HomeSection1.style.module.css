@@ -23,7 +23,7 @@ padding-left: 100px;
 padding-top: 294px;
 }
 .itemscontext h3{
-    font-family: 'Alice';
+    font-family: 'alice-regular';
 font-style: normal;
 font-weight: 400;
 font-size: 52px;
@@ -36,7 +36,7 @@ background: linear-gradient(100.35deg, #02979D 7.72%, #00888D 92.28%);
 -webkit-text-fill-color: transparent;
 }
 .itemscontext h4{
-    font-family: 'Alice';
+    font-family: 'alice-regular';
 font-style: normal;
 font-weight: 400;
 font-size: 45px;
@@ -132,7 +132,7 @@ background: url("../../../assests/image/Rectangle 48.png");
 .servic2,
 .servic3{
     width: 400px;
-    height: 294px;
+    height: 330px;
     background: #FAFEFE;
     border: 0.220113px solid rgba(2, 151, 157, 0.7);
     box-shadow: 0px 1.69318px 42.3294px 1.69318px rgba(2, 151, 157, 0.1);
@@ -150,11 +150,9 @@ background: url("../../../assests/image/Rectangle 48.png");
 .servic1:hover,
 .servic2:hover,
 .servic3:hover{
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 75%, 50% 93%, 39% 75%, 0% 75%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 75%, 50% 93%, 39% 75%, 0% 75%);
-    height: 400px;
-    background: #02979D;
-    border-radius: 25.3977px;
+    background: url("../../../assests//image//Union.png");
+    border: none;
+    box-shadow: none;
 }
 .servic1:hover > .servic1pic,
 .servic2:hover > .servic2pic,
@@ -162,4 +160,16 @@ background: url("../../../assests/image/Rectangle 48.png");
     filter:  brightness(0) invert(1);
     /* filter: invert(0.5); */
     /* filter: invert(98%) sepia(100%) saturate(3%) hue-rotate(196deg) brightness(107%) contrast(100%); */
+}
+.section1_servicesTitle{
+    font-family: 'alice-regular';
+    font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #000B0C;
 }
