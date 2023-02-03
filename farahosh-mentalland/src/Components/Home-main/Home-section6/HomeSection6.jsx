@@ -3,16 +3,23 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import pic1 from "../../../assests/image/Group 7.png";
 import pic2 from "../../../assests/image/Group 6.png";
 import pic3 from "../../../assests/image/Group 9.png";
-
+import docsPic1 from "../../../assests/image/Rectangle 31.png";
 import styles from "./HomeSection6.style.module.css";
+import Button from '../../buttons/button.component';
+import line from "../../../assests/image/Line 1.png";
+
 
 const Homesection6 = () => {
+    const [docs , setDocs] = React.useState([
+        {"pic" : docsPic1 , "title" : "Lorem ipsum dolor sit amet consectetur. Magna." , "text" : "Lorem ipsum dolor sit amet consectetur. Etiam aliquet tristique turpis ultrices ac augue eu adipiscing turpis. Ultricies rhoncus semper in id nec faucibus non vulputate vestibulum. Pharetra a elementum in."},
+        {"pic" : docsPic1 , "title" : "Lorem ipsum dolor sit amet consectetur. Magna." , "text" : "Lorem ipsum dolor sit amet consectetur. Etiam aliquet tristique turpis ultrices ac augue eu adipiscing turpis. Ultricies rhoncus semper in id nec faucibus non vulputate vestibulum. Pharetra a elementum in."},
+        {"pic" : docsPic1 , "title" : "Lorem ipsum dolor sit amet consectetur. Magna." , "text" : "Lorem ipsum dolor sit amet consectetur. Etiam aliquet tristique turpis ultrices ac augue eu adipiscing turpis. Ultricies rhoncus semper in id nec faucibus non vulputate vestibulum. Pharetra a elementum in."}
+    ])
     const [expanded , setExpanded] = React.useState({
         "case1": true,
         "case2" : true,
@@ -20,6 +27,9 @@ const Homesection6 = () => {
         "case4" : true
 
 });
+    const addArticle = () =>{
+        setDocs(prevDocs => ([...prevDocs , {"pic" : docsPic1 , "title" : "Lorem ipsum dolor sit amet consectetur. Magna." , "text" : "Lorem ipsum dolor sit amet consectetur. Etiam aliquet tristique turpis ultrices ac augue eu adipiscing turpis. Ultricies rhoncus semper in id nec faucibus non vulputate vestibulum. Pharetra a elementum in."} ,  {"pic" : docsPic1 , "title" : "Lorem ipsum dolor sit amet consectetur. Magna." , "text" : "Lorem ipsum dolor sit amet consectetur. Etiam aliquet tristique turpis ultrices ac augue eu adipiscing turpis. Ultricies rhoncus semper in id nec faucibus non vulputate vestibulum. Pharetra a elementum in."}]))
+    }
     const handlechange = Case =>
     {
         if(Case === "case1"){
@@ -41,6 +51,29 @@ const Homesection6 = () => {
 
     }
     return (
+        <div>
+        <div className={styles.articles_bg}>
+        <h4 className={styles.articlesSection_title}>latest Articles</h4>
+        <div className={styles.articles_list}>{
+            docs.map(element => {
+                console.log("hi");
+                return(
+                    <div className={styles.article}>
+                    <div className='w-full flex flex-row justify-between items-center p-5  align-middle'>
+                        <img  className={styles.articlePic} alt='' src={element.pic} />
+                        <div className={styles.articleContext}>
+                            <h5>{element.title}</h5>
+                            <p>{element.text}</p>
+                        </div>
+                        <img alt='' src={line} />
+                        <Button>Read</Button>
+                    </div>
+                    </div>
+                )
+            })
+        }</div>
+        <Button onClick={addArticle}>See all</Button>
+        </div>
         <div className='flex flex-col align-middle justify-items-start'>
             <h4 className={styles.section6_title}>Most Frequently Asked Questions</h4>
             <div className='flex flex-row align-middle  justify-around items-center'>
@@ -120,6 +153,8 @@ const Homesection6 = () => {
         </div>
             </div>
         </div>
+        </div>
+       
     );
 }
  
