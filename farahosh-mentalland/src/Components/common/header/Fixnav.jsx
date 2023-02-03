@@ -3,7 +3,7 @@ import Sidebar from "./sidebar/Sidebar"
 import {Box} from "@mui/material"
 const Fixnav = ()=>{
     return (
-        <Box sx={{position:"static" , top:0 , left:0 , zIndex:"99"}}>
+        <Box sx={{position:"fixed" , top:0 , left:0 , zIndex:"99999"}}>
             <TopNav1 />
             <Sidebar />
         </Box>

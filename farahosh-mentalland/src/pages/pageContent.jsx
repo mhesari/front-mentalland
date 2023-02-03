@@ -2,7 +2,7 @@ import { Route, Routes} from "react-router-dom";
 import Grid from "@mui/material/Unstable_Grid2";
 import Home from "./Routes/Home";
 import Page2 from "./Routes/page2";
-
+import PageBusiness from "./Routes/PageBusiness";
 const Nopage =() => {
   
     return(
@@ -22,6 +22,8 @@ const PageContent = ()=>{
                 <Route index element={<Home/>} />
                 <Route path="*" element={ <Nopage/> }/>
                 <Route path="Page2" element={ <Page2/> }/>
+                <Route patch="small page" element={ <PageBusiness/> }/>
+                
             </Routes>
         </Grid>
     )

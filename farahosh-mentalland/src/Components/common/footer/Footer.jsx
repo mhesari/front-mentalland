@@ -45,7 +45,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
 const Footer = ()=>{
     return (
         <>
-            <Grid container sx={{width:1 , backgroundImage:`url(${require("../../../assests/image/Vector.png")}) , linear-gradient(to right , #02979D , #00888D)` , boxSizing:'border-box' ,px:5,backgroundRepeat:'no-repeat' }}>
+            <Grid container sx={{width:1 , backgroundImage:`url(${require("../../../assests/image/Vector.png")}) , linear-gradient(to right , rgba(2, 151, 157,1) ,rgba(0, 137, 142,1))` , boxSizing:'border-box' ,px:5,backgroundRepeat:'no-repeat' }}>
                 
                 <Grid xs={12} md={7}  >
                     <Grid container sx={{width:1 ,justifyContent:"space-between"  , px:4 }}>

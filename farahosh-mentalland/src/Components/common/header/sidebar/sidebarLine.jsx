@@ -26,7 +26,7 @@ useEffect(() => {
             md:"block",
             lg:"block",
             xl:"block"
-        }, width:"100vw" , background:"white" , position:scrollPosition>=60?"fixed":"" , top:scrollPosition>=30?"0px":"",left:scrollPosition>=30?"0px":"" }}>
+        }, width:"100vw" , background:"white" , position:scrollPosition>=60?"fixed":"",boxShadow:scrollPosition>=60?" rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px":"" , top:scrollPosition>=30?"0px":"",left:scrollPosition>=30?"0px":"" }}>
             <Box>
                 
             </Box>

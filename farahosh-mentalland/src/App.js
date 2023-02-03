@@ -29,10 +29,7 @@ function App() {
        
         <MainLayout>
             
-            <Box component="div" sx={{ zIndex:"9999" ,position:"fixed",top:"0",left:"0px"}}>
-              <TopNav />
-              <Sidebar />
-            </Box>
+            <Fixnav />
             <PageContainer />  
             <Footer />
         </MainLayout>
