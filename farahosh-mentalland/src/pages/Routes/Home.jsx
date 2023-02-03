@@ -8,6 +8,7 @@ import Homesection6 from "../../Components/Home-main/Home-section6/HomeSection6"
 
 
 const Home = () => {
+
     return ( 
         <Fragment>
             <HomeSection1 />
