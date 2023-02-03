@@ -45,9 +45,9 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
 const Footer = ()=>{
     return (
         <>
-            <Grid container sx={{width:1,marginTop:{xs:"50px",lg:"80px"} , background:`linear-gradient(to right , rgba(2, 151, 157,1) ,rgba(0, 137, 142,1))` , boxSizing:'border-box' ,px:{xs:0,md:2,lg:5},position:"relative" }}>
-                <Box sx={{position:"absolute",width:"100%",height:"100%",top:"0px",left:"0px",zIndex:"999",backgroundImage:`url(${require("../../../assests/image/Vector.png")})`,backgroundRepeat:"no-repeat",opacity:"0.1"}}></Box>
-                <Grid xs={12} md={7}  >
+            <Grid container sx={{width:1,marginTop:{xs:"50px",lg:"80px"} , background:`linear-gradient(to right , rgba(2, 151, 157,1) ,rgba(0, 137, 142,1))` ,zIndex:"1", boxSizing:'border-box' ,px:{xs:0,md:2,lg:5},position:"relative" }}>
+                <Box sx={{position:"absolute",width:"100%",height:"100%",top:"0px",left:"0px",zIndex:"10",backgroundImage:`url(${require("../../../assests/image/Vector.png")})`,backgroundRepeat:"no-repeat",opacity:"0.1"}}></Box>
+                <Grid xs={12} md={7} sx={{zIndex:"20"}} >
                     <Grid container sx={{width:1 ,justifyContent:"space-between"  , px:4 }}>
                         <Grid xs={12} md={6} sx={{pt:5}}>
                         <Box sx={{width:315 , textAlign:"left" , lineHeight:"40px",wordSpacing:1.5 }}>

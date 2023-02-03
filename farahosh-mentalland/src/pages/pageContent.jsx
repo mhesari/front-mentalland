@@ -4,6 +4,7 @@ import Home from "./Routes/Home";
 import Page2 from "./Routes/page2";
 import PageBusiness from "./Routes/PageBusiness";
 import Art from "./Routes/Arts";
+import Page9 from "./Routes/BusinessAdult"
 
 const Nopage =() => {
   
@@ -25,7 +26,9 @@ const PageContent = ()=>{
                 <Route path="*" element={ <Nopage/> }/>
                 <Route path="Page2" element={ <Page2/> }/>
                 <Route path="Art" element={ <Art/> }/>
-                <Route patch="smallpage" element={ <PageBusiness/> }/>
+                <Route path="smallpage" element={ <PageBusiness/> }/>
+                <Route path="page9" element={ <Page9/> }/>
+
             </Routes>
         </Grid>
     )

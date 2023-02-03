@@ -17,11 +17,11 @@ import Art from "../../../assests/image/Group 773.svg";
 const HomeSection1 = () => {
     return ( 
         <Fragment>
-             <div className={styles.section1}>
+            <div className={styles.section1}>
                 <div className={styles.Slider}>
                 <Swiper pagination={true} modules={[Pagination]} className="mySwiper w-full h-full ">
-            <SwiperSlide><div className={styles.sliderItem1}>
-            <div className={styles.itemscontext}>
+                <SwiperSlide><div className={styles.sliderItem1}>
+                <div className={styles.itemscontext}>
                 <h3>mentalland</h3>
                 <h4>
                     where you can learn, improve,
@@ -42,9 +42,9 @@ const HomeSection1 = () => {
             </div>
             <div className={styles.showNumber}>
                 <Grid   container
-  direction="row"
-  justifyContent="center"
-  alignItems="center">
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center">
                     <div className={styles.Item1}>
                         <h4>+4000</h4>
                         <p>Treated
