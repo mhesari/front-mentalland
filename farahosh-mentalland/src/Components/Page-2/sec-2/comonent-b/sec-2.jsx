@@ -11,7 +11,7 @@ const Sec2= () => {
                <Grid xs={12} lg={4}><SelectBox /></Grid>
                <Grid xs={12} lg={4}><SelectBox /></Grid>
                 <Grid xs={12} lg={4} sx={{paddingX:2,textAlign:'center'}}>
-                   <Button sx={{padding:{lg:"14px 40px",xs:"17px 20px"},"&.MuiButtonBase-root:active":{border:"none",outline:"none"},borderRadius:"16px",outline:"none","&:hover":{color:"#02979D"},"&:focus":{border:"none",outline:"none"}, background:"#02979D",color:"white",fontSize:"Gilroy-Bold",fontSize:{lg:"17px",xs:"12px"}}}>Request Appointment</Button>  
+                   <Button sx={{padding:{lg:"14px 40px",xs:"17px 20px"},"&.MuiButtonBase-root:active":{border:"none",outline:"none"},borderRadius:"16px",outline:"none","&:hover":{color:"#02979D"},"&:focus":{border:"none",outline:"none"}, background:"#02979D",color:"white",fontFamily:"Gilroy-Bold",fontSize:{lg:"17px",xs:"12px"}}}>Request Appointment</Button>  
                 </Grid>            
             </Grid>    
           </Box>

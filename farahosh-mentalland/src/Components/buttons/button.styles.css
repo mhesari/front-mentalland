@@ -10,6 +10,7 @@
     font-style: normal;
     font-weight: 600;
     border: none;
+    outline: none;
     border-radius: 40px;
     cursor: pointer;
     display: flex;
@@ -23,5 +24,8 @@
     transform: scale(1.1);
     
   }
-  
+  .button-container:focus{
+    outline: none;
+    border: none;
+  }
   

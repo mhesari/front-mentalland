@@ -1,5 +1,5 @@
 import styles from "./sec1.module.css";
-import Sec2 from "../sec-2/sec-2/sec-2"
+import Sec2 from "../sec-2/comonent-b/sec-2"
 const Sec1 = () => {
     return (
       <div style={{position:"relative"}}>
