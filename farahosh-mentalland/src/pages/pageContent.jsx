@@ -24,7 +24,7 @@ const PageContent = ()=>{
                 {/*   Route   */}
                 <Route index element={<Home/>} />
                 <Route path="*" element={ <Nopage/> }/>
-                <Route index element={ <Page2/> }/>
+                <Route path="Page2" element={ <Page2/> }/>
                 <Route path="Art" element={ <Art/> }/>
                 <Route path="smallpage" element={ <PageBusiness/> }/>
                 <Route path="page9" element={ <Page9/> }/>
