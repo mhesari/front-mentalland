@@ -5,6 +5,7 @@ import Sec4 from "../../Components/Page-2/sec-4/sec-4";
 import Sec5 from "../../Components/Page-2/sec-5/sec-5";
 import Sec6 from "../../Components/Page-2/sec-6/sec-6";
 import Sec8 from "../../Components/Page-2/sec-8/sec-8";
+import Sec9 from "../../Components/Page-2/sec-9/sec-9";
 
 const Page2 = () => {
     return ( 
@@ -15,6 +16,7 @@ const Page2 = () => {
             <Sec5 />
             <Sec6 />
             <Sec8 />
+            <Sec9 />
         </Fragment>
      );
 }
