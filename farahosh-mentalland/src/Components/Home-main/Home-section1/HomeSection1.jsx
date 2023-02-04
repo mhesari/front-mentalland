@@ -15,9 +15,10 @@ import Business from "../../../assests/image/Group 774.svg";
 import Art from "../../../assests/image/Group 773.svg";
 import Button from "../../buttons/button.component";
 import picOfService from "../../../assests/image/Rectangle 11.png";
-
+import { Card, Collapse } from "@mui/material";
 
 const HomeSection1 = () => {
+  const [isChecked, setIsChecked] = React.useState(false);
     return ( 
         <Fragment>
             <div className={styles.section1}>
@@ -80,19 +81,17 @@ const HomeSection1 = () => {
                     justifyContent="center"
                     alignItems="flex-start"
                     gap={1}>
-                 <div className={styles.servic1}>
+                    <Card className={styles.servic1}  onClick={() => setIsChecked(!isChecked)}>
                  <img className={styles.servic1pic} alt="" src={Heart} />
-          
-                 </div>
-                <div className={styles.servic2}>
+                    </Card>
+                    <Card className={styles.servic2} onClick={() => setIsChecked(!isChecked)}>
                 <img className={styles.servic2pic}  alt="" src={Business} />
-           
-                </div>
-                <div className={styles.servic3}>
+                </Card>
+                <Card className={styles.servic3} onClick={() => setIsChecked(!isChecked)}>
                 <img className={styles.servic3pic}  alt="" src={Art} />
-            
-                </div>
+                </Card>
             </Grid>
+            <Collapse in={isChecked}>
             <div className={styles.serviceContext}>
                 <div className=" flex flex-col  justify-between align-middle">
                     <p>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.</p>
@@ -100,6 +99,7 @@ const HomeSection1 = () => {
                 </div>
                 <img alt="" src={picOfService} />
             </div>
+            </Collapse>
 
                </div>
         </div>

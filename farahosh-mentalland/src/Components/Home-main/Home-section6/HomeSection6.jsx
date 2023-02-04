@@ -59,6 +59,7 @@ const Homesection6 = () => {
                 console.log("hi");
                 return(
                     <div className={styles.article}>
+                  
                     <div className='w-full flex flex-row justify-between items-center p-5  align-middle'>
                         <img  className={styles.articlePic} alt='' src={element.pic} />
                         <div className={styles.articleContext}>
