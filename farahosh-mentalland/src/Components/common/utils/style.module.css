@@ -4,6 +4,7 @@
     justify-content:space-between;
     width: 315px;
     color:#02979D;
+    z-index: 999;
 }
 .li{
     background: white;
@@ -15,5 +16,5 @@
     justify-content: center;
 }
 .li:hover{
-    background: rgba(255, 255, 255, 0.897);
+    background: rgba(255, 255, 255, 0.57);
 }
