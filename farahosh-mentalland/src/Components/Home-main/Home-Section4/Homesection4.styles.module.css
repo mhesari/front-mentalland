@@ -67,6 +67,7 @@ color: #000B0C;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 9%;
     }
     .section4_title{
         text-align: center;
@@ -83,9 +84,13 @@ color: #000B0C;
     }
     .section4_context{
         align-items: center;
+        margin-bottom: 5rem;
     }
     .section4_list{
         width: 80%;
+    }
+    .section4_list li{
+        font-size: 12px;
     }
 
 }
