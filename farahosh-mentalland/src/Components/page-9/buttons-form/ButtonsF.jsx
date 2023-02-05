@@ -18,3 +18,9 @@ export const MainTitle = ({children})=>{
 
     )
 }
+export const TextAndIcon = ({children})=>{
+    return (
+        <Typography sx={{fontFamily:"Gilroy-Regular",color:"black",fontSize:"12px",display:"flex",alignItems:"center"}}> {children}</Typography>
+
+    )
+}

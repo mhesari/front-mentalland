@@ -26,7 +26,7 @@ const PageContent = ()=>{
                 <Route path="page2" element={ <Page2/> }/>
                 <Route path="Art" element={ <Art/> }/>
                 <Route path="smallpage" element={ <PageBusiness/> }/>
-                <Route index element={ <Page9/> }/>
+                <Route path="page9" element={ <Page9/> }/>
 
             </Routes>
         </Grid>

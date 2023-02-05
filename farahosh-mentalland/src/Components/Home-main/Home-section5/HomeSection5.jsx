@@ -1,12 +1,10 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import { Navigation } from "swiper";
-// import pic1Card from "../../../assests/image/Ellipse 5.png";
-// import styles from "./HomeSection5.style.module.css";
-// import "./slidertoggle.style.css";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+import pic1Card from "../../../assests/image/Ellipse 5.png";
+import styles from "./HomeSection5.style.module.css";
+import "./slidertoggle.style.css";
 
 // const Homesection5 = () => {
 //     return ( 
@@ -78,7 +76,7 @@ const Slid2= () => {
   return (
     
      <>
-        <Box className="slider2" sx={{width:"85%",margin:"0px auto",overflowX:"hidden",mt:13}}>
+        <Box className="slider2" sx={{width:"90%",margin:"0px auto",overflowX:"hidden",mt:13}}>
             <ImageSlider />
         </Box>
      </>
