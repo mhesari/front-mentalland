@@ -21,17 +21,17 @@ const ImageSlider = ({data,title , text}) => {
         <>
          
                 <Box  sx={{overflowY:"visible"}}>
-                <Typography sx={{fontFamily:"Gilroy-SemiBold",fontSize:{lg:"30px",xs:"15px"},py:2,textAlign:"left"}}>{title}</Typography>
-                    <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">
-                                        {
-                                            data.map((item ,index)=>(
-                                                <SwiperSlide key={index} virtualIndex={index}>
-                                                    <Card  img={item.img} userInfo={item.userInfo} smallInfo={item.smallInfo} date={item.date} time={item.time} caption={item.caption}/>
-                                                </SwiperSlide>
-                                            ))
-                                        }            
-                    </Swiper>
-                   
+                    <Typography sx={{fontFamily:"Gilroy-SemiBold",fontSize:{lg:"30px",xs:"15px"},py:2,textAlign:"left"}}>{title}</Typography>
+                        <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">
+                                            {
+                                                data.map((item ,index)=>(
+                                                    <SwiperSlide key={index} virtualIndex={index}>
+                                                        <Card  img={item.img} userInfo={item.userInfo} smallInfo={item.smallInfo} date={item.date} time={item.time} caption={item.caption}/>
+                                                    </SwiperSlide>
+                                                ))
+                                            }            
+                        </Swiper>
+                    
                 </Box>
         
 

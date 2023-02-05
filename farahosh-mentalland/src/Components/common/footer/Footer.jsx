@@ -103,13 +103,13 @@ const Footer = ()=>{
                     
                         <Grid container sx={{width:1 ,justifyContent:"space-between" ,px:8 ,pt:5}}>
                         <Grid xs={6} >
-                        <Typography variant="h5" sx={{textAlign:"left" , color:"white" , pb:2}}>item title</Typography>
+                        <Typography variant="h5" sx={{textAlign:{lg:"left",xs:"center"} , color:"white" , pb:2}}>item title</Typography>
                         <List
                                 sx={{
                                     width: '100%',
                                     position: 'relative',
                                     overflow: 'auto',
-                                   
+                                  
                                 }}
                               
                                 >
@@ -120,7 +120,7 @@ const Footer = ()=>{
                                             <ListItem key={sectionId} sx={{mb:5 , color:"#fff" ,"&:hover":{
                                                 fontWeight:"bold"
                                             }}}>
-                                                <ListItemButton>
+                                                <ListItemButton sx={{ textAlign:{lg:"left",xs:"center"}}}>
                                                    <ListItemText primary={<Typography variant="p">{sectionId}</Typography>} />
                                                 </ListItemButton>
                                             </ListItem>
@@ -130,7 +130,7 @@ const Footer = ()=>{
                                 </List>
                         </Grid>
                         <Grid xs={6}>
-                        <Typography variant="h5" sx={{textAlign:"left" , color:"#fff" , pb:2 }}>item title 2</Typography>
+                        <Typography variant="h5" sx={{textAlign:{lg:"left",xs:"center"} , color:"#fff" , pb:2 }}>item title 2</Typography>
 
                         <List
                                 sx={{
@@ -148,8 +148,8 @@ const Footer = ()=>{
                                   <ListItem key={sectionId} sx={{mb:5 , color:"#fff" ,"&:hover":{
                                     fontWeight:"bold"
                                 }}}>
-                                    <ListItemButton>
-                                       <ListItemText primary={<Typography variant="p">{sectionId}</Typography>} />
+                                    <ListItemButton sx={{ textAlign:{lg:"left",xs:"center"}}}> 
+                                       <ListItemText primary={<Typography variant="p" >{sectionId}</Typography>} />
                                     </ListItemButton>
                                 </ListItem>
                                       

@@ -58,7 +58,7 @@ export default function MultipleSelectChip() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 300, borderRadius:"40px"}}>
+      <FormControl sx={{ m: 1, width: {sm:"300px",xs:"200px"}, borderRadius:"40px"}}>
         <InputLabel id="demo-multiple-chip-label">Select the field...</InputLabel>
         <Select
         labelStyle={{ color: '#ff0000' }}

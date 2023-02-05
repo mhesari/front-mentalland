@@ -6,7 +6,7 @@ const Slid1= () => {
   return (
     
      <>
-        <Box className="slider1" sx={{width:"90%",margin:"0px auto",overflowX:"hidden"}}>
+        <Box className="slider1" sx={{width:"90%",maxWidth:"1800px",margin:"0px auto",overflowX:"hidden"}}>
             <ImageSlider />
         </Box>
      </>

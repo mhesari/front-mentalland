@@ -18,3 +18,22 @@
 .li:hover{
     background: rgba(255, 255, 255, 0.57);
 }
+@media only screen and (max-width: 1350px) {
+   .ul{
+    transform: translateY(-85px);
+    width: 280px;
+   }
+
+    
+}
+@media only screen and (max-width: 850px) {
+    .ul{
+        width: 250px;
+        margin: 0px auto;
+    }
+    .li{
+        width: 40px;
+        height: 40px;
+    }
+    
+}

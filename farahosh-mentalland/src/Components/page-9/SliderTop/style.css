@@ -23,7 +23,7 @@
 @media only screen and (max-width: 1200px) {
     .slider1 .swiper-button-prev,
     .slider1 .swiper-button-next{
-    top:-20%;
+    top:-30%;
     right: 0px;
 }
 .slider1 .swiper-button-prev::after,
@@ -31,7 +31,7 @@
     font-size: 10px;
 }
 .slider1 .swiper-button-prev,.slider1 .swiper-rtl .swiper-button-next{
-    right: 20%!important;
+    left: 80%!important;
 }
   }
   @media only screen and (max-width: 850px) {
@@ -39,7 +39,7 @@
     .slider1 .swiper-button-next{
     width: 37px;
     height: 37px;
-    top:40px;
+    top:-50px;
     right: 0px;
 }
 .slider1 .swiper-button-prev{

@@ -35,7 +35,7 @@ const SidebarLinks = ()=>{
                                 minHeight:40,
                                 pl:3
                             }}>
-                                <ListItemText primary={<Typography variant="h5">MentalLands</Typography>}  sx={{opacity:open?1:0 }} />
+                                <ListItemText primary={<Typography variant="h5" sx={{fontFamily:"Gilroy-black"}}>MentalLands</Typography>}  sx={{opacity:open?1:0 }} />
                         </ListItemButton>
                 </ListItem>
                 {
