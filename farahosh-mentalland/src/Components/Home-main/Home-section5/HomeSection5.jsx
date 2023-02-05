@@ -78,7 +78,7 @@ const Slid2= () => {
   return (
     
      <>
-        <Box className="slider2" sx={{width:"90%",margin:"0px auto",overflowX:"hidden",mt:13}}>
+        <Box className="slider2" sx={{width:"85%",margin:"0px auto",overflowX:"hidden",mt:13}}>
             <ImageSlider />
         </Box>
      </>

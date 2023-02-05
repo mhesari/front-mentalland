@@ -1,5 +1,5 @@
 .section2_text{
-    width: 1240px;
+    width: 90%;
 height: 195px;
 
 font-family: 'Gilroy-Regular';
@@ -21,7 +21,7 @@ font-weight: 400;
 font-size: 40px;
 line-height: 46px;
 margin-bottom: 30px;
-
+text-align: center;
 text-transform: uppercase;
 
 
@@ -56,10 +56,34 @@ text-transform: uppercase;
 color: #000B0C;
 }
 
-.section2_pic__shadow{
+.section2_pic__shadow,
+.section2_pic__shadow_special{
     position: absolute;
     left: -79px;
     width: 332.48px;
 height: 184.6px;
    background: url("../../../assests/image/Rectangle\ 49.png");
+}
+@media only screen and (max-width:1200px) {
+    .section2_title{
+        font-size: 20px;
+    }
+    .section2_text{
+        font-size: 15px;
+        height: fit-content;
+    }
+    .section2_pic__shadow_special,
+    .section2_pic__shadow{
+        display: none !important;
+    }
+    .section2_pic{
+        height: 250px;
+        width: 130px;
+    }
+    .section2_pic p{
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        width: 130px;
+    }
 }

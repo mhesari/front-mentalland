@@ -51,12 +51,11 @@ const Homesection6 = () => {
 
     }
     return (
-        <div>
+        <div className='flex flex-col items-center align-middle justify-items-center '>
         <div className={styles.articles_bg}>
         <h4 className={styles.articlesSection_title}>latest Articles</h4>
         <div className={styles.articles_list}>{
             docs.map(element => {
-                console.log("hi");
                 return(
                     <div className={styles.article}>
                   
