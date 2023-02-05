@@ -59,7 +59,7 @@ const Homesection6 = () => {
                 return(
                     <div className={styles.article}>
                   
-                    <div className='  w-full  flex flex-col md:flex-row justify-between items-center p-5  align-middle'>
+                    <div className='  w-full  flex flex-col lg:flex-row justify-between items-center p-5  align-middle'>
                         <img  className={styles.articlePic} alt='' src={element.pic} />
                         <div className={styles.articleContext}>
                             <h5>{element.title}</h5>

@@ -1,5 +1,5 @@
 .articles_list{
-    width: 1240px;
+    width: 90%;
 }
 .articles_bg{
     width: 1440px;
@@ -91,7 +91,7 @@ text-transform: capitalize;
 color: #000B0C;
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1500px) {
     .articles_bg{
         width: 85%;
     }
@@ -141,9 +141,11 @@ color: #000B0C;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: fit-content;
     }
     .section6_accordion{
         width: 85%;
+        height: fit-content;
     }
     .Accordionlist_imges{
         display: none;

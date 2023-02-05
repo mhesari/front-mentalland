@@ -76,13 +76,12 @@ height: 184.6px;
     .section2_pic__shadow{
         display: none !important;
     }
-    .section2_pic{
-        height: 250px;
-        width: 130px;
+    .section2_pic img{
+        transform: scale(0.8);
     }
     .section2_pic p{
-        bottom: 0;
-        left: 0;
+        bottom: none;
+        left: 15px;
         font-size: 12px;
         width: 130px;
     }
