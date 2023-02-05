@@ -59,13 +59,13 @@ const Homesection6 = () => {
                 return(
                     <div className={styles.article}>
                   
-                    <div className='w-full flex flex-row justify-between items-center p-5  align-middle'>
+                    <div className='  w-full  flex flex-col md:flex-row justify-between items-center p-5  align-middle'>
                         <img  className={styles.articlePic} alt='' src={element.pic} />
                         <div className={styles.articleContext}>
                             <h5>{element.title}</h5>
                             <p>{element.text}</p>
                         </div>
-                        <img alt='' src={line} />
+                        <img alt='' className={styles.articleImg} src={line} />
                         <Button>Read</Button>
                     </div>
                     </div>
@@ -74,7 +74,7 @@ const Homesection6 = () => {
         }</div>
         <Button onClick={addArticle}>See all</Button>
         </div>
-        <div className='flex flex-col align-middle justify-items-start'>
+        <div className='flex flex-col align-middle justify-items-center md:justify-items-start items-center  md:items-start'>
             <h4 className={styles.section6_title}>Most Frequently Asked Questions</h4>
             <div className='flex flex-row align-middle  justify-around items-center'>
             <div className={styles.section6_list}>
@@ -146,7 +146,7 @@ const Homesection6 = () => {
         </AccordionDetails>
       </Accordion>
         </div>
-        <div>
+        <div className={styles.Accordionlist_imges}>
             <img alt='' src={pic1} />
             <img alt='' src={pic2} />
             <img alt='' src={pic3} />
