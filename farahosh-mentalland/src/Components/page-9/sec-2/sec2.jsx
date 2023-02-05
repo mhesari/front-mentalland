@@ -11,11 +11,12 @@ const Sec1 = () => {
           spacing={3}
           justifyContent="space-around"
           alignItems="center"
+          sx={{width:"90%",margin:"0px solid"}}
         >
-          <div className="z-pattern-image">
+          <div className="z-pattern-image" >
             <img src={Img1} />
           </div>
-          <div className="z-pattern-text">
+          <div className="z-pattern-text" style={{paddingLeft:"30px"}}>
             <h2>FUTURE OF DIGITAL MARKETING</h2>
 
             <p>

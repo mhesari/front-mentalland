@@ -18,6 +18,7 @@ export default function BasicSelect() {
           id="demo-simple-select"
           value={age}
           variant="standard"
+          sx={{fontFamily:"Gilroy-Regular"}}
           onChange={handleChange}
         >
           <MenuItem value={10}><Avatar src={flag} sx={{width:"15px",height:"15px"}}/> EN</MenuItem>

@@ -12,7 +12,7 @@ import { Typography } from "@mui/material";
 const Sec4 = () => {
   return (
     
-      <Box sx={{position:"relative", px:5}} >
+      <Box sx={{position:"relative",width:"90%",margin:"0px auto"}} >
         <Box sx={{textAlign:"center",mb:6,mt:36}}>
             <MainTitle>THE LATEST JOB OPPORTUNITIES</MainTitle>
         </Box>

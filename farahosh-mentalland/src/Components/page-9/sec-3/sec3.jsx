@@ -16,7 +16,7 @@ const Sec3 = () => {
           justifyContent="space-around"
           alignItems="center"
         >
-          <div className="z-pattern-image">
+          <div className="z-pattern-image" style={{maxWidth:"1800px"}}>
             <img src={Img1} />
           </div>
           <div className="z-pattern-text">

@@ -64,8 +64,8 @@ export default function PrimarySearchAppBar() {
               xl:"flex"
             } , alignItems:"center" , justifyContent:"space-between" , width:"100%"}}>
             <Box>
-              <ButtonCustomised sx={{background:"#02979D" , color:"white" , width:"132px" , height:"40px" , mx:2}}>Login</ButtonCustomised>
-              <ButtonCustomised sx={{background:"#02979D" , color:"white" , width:"132px" , height:"40px"}}>Cart</ButtonCustomised>
+              <ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px" , mx:2}}>Login</ButtonCustomised>
+              <ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px"}}>Cart</ButtonCustomised>
               
             </Box>
             <select name="cars" id="cars" className={css.select}>
