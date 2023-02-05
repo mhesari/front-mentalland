@@ -3,7 +3,8 @@ import pic1 from "../../../assests/image/Group 779.png";
 import Button from "../../buttons/button.component";
 const Homesection4 = () => {
     return ( 
-        <div className={styles.section4}>
+        <div className="flex flex-col items-center align-middle justify-items-center ">
+         <div className={styles.section4}>
         <div className=" flex flex-row align-middle justify-around items-center"> 
             <img className={styles.section4_pic} alt="" src={pic1} />
             <div>
@@ -19,6 +20,8 @@ const Homesection4 = () => {
             </div>
         </div>
         </div>
+        </div>
+      
      );
 }
  

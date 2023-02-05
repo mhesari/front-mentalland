@@ -12,7 +12,7 @@ const Homesection3 = () => {
                 <p className={styles.section3_text}>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. </p>
             </div>
             <div className={styles.section3_card}>
-                <Grid className="flex" direction="row"
+                <Grid className="flex" direction={{ xs: 'column', sm: 'row' }}
              justifyContent="space-between"
   alignItems="center">
                     <div className={styles.card}>
