@@ -50,13 +50,13 @@ const Footer = ()=>{
                 <Grid xs={12} md={7} sx={{zIndex:"20"}} >
                     <Grid container sx={{width:1 ,justifyContent:"space-between"  , px:4 }}>
                         <Grid xs={12} md={6} sx={{pt:5}}>
-                        <Box sx={{width:315 , textAlign:"left" , lineHeight:"40px",wordSpacing:1.5 }}>
-                            <Typography variant="h4" sx={{textAlign:"left" , color:"white" , pb:2 , fontSize:"Gilroy-Black" , fontSize:"30px" }}>Mental Lands</Typography>
-                            <Typography variant="p" sx={{color:"white" , width:"315px" , fontSize:"18px" , fontFamily:"Gilroy-Regular" , lineHeight:"40sp"}}>
+                        <Box sx={{width:{lg:"315px",xs:"90%"} , textAlign:{xs:"center",md:"left"}, margin:"0px auto", lineHeight:"40px",wordSpacing:1.5 }}>
+                            <Typography variant="h4" sx={{ color:"white" , pb:2 , fontSize:"Gilroy-Black" , fontSize:"30px" }}>Mental Lands</Typography>
+                            <Typography variant="p" sx={{ color:"white" , width:"315px" , fontSize:"18px" , fontFamily:"Gilroy-Regular" , lineHeight:"40sp"}}>
                             Lorem ipsum dolor sit amet consectetur. Eu in purus vulputate consectetur venenatis aliquam. Dolor in quis viverra aenean amet. Neque purus lorem nam ipsum. Cras tellus blandit molestie velit semper ut ut cras ac. Dignissim vitae suscipit augue.        
                             </Typography>    
                         </Box>                        
-                            <Box sx={{mt:"140px"}}>
+                            <Box sx={{mt:"140px",textAlign:{xs:"center",md:"left"}}}>
                                  <SocialIcons/>
                             </Box>
                         </Grid>
