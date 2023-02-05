@@ -21,13 +21,12 @@ const PageContent = ()=>{
     return (
         <Grid  xs={12} sm={12} md={12} lg={12} xl={12}>
             <Routes>
-                {/*   Route   */}
-                {/* <Route index element={<Home/>} />
-                <Route path="*" element={ <Nopage/> }/> */}
+                <Route index element={<Home/>} />
+                <Route path="*" element={ <Nopage/> }/>
                 <Route index element={ <Page2/> }/>
-                {/* <Route path="Art" element={ <Art/> }/>
+                <Route path="Art" element={ <Art/> }/>
                 <Route path="smallpage" element={ <PageBusiness/> }/>
-                <Route index element={ <Page9/> }/> */}
+                <Route index element={ <Page9/> }/>
 
             </Routes>
         </Grid>
