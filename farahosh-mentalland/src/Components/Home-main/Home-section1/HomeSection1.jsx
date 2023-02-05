@@ -73,8 +73,8 @@ const HomeSection1 = () => {
             </div>
         </div>
         <div className="flex flex-col align-middle justify-items-start items-center w-full">
-            
-               <h3 className={styles.section1_servicesTitle}>OUR PROFESSIONAL SERVICES</h3>
+            <div className={styles.section1_2}>
+            <h3 className={styles.section1_servicesTitle}>OUR PROFESSIONAL SERVICES</h3>
                <div className={styles.servicContext}> 
                <Grid container
                     direction="row"
@@ -102,6 +102,7 @@ const HomeSection1 = () => {
             </Collapse>
 
                </div>
+            </div>
         </div>
 
         </Fragment>

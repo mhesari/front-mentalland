@@ -65,7 +65,7 @@ const Homesection5 = () => {
         //     </div>
         // </div>
         <>
-            <Box className="slider4" sx={{width:"۸۵%",maxWidth:"1800px",margin:"0px auto",overflowX:"hidden",mt:13}}>
+            <Box className="slider4" sx={{width:"85%",maxWidth:"1800px",margin:"0px auto",overflowX:"hidden",mt:13}}>
                 <ImageSlider />
             </Box>
         </>

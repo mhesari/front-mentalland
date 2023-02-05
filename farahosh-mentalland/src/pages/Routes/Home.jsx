@@ -11,7 +11,7 @@ const Home = () => {
 
     return ( 
         <Fragment>
-            {/* <HomeSection1 /> */}
+            <HomeSection1 />
             <Homesection2 />
             <HomeSection3 />
             <Homesection4 />

@@ -52,7 +52,7 @@ line-height: 40px;
 color: #000B0C;
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1500px) {
     .section4{
         width: 85%;
     }

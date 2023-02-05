@@ -193,3 +193,13 @@ line-height: 40px;
 color: #000B0C;
 
 }
+
+@media only screen and (max-width:1200px) {
+    .section1{
+        height: 2300px;
+    }
+    .section1_2{
+        display: none;
+    }
+    
+}
