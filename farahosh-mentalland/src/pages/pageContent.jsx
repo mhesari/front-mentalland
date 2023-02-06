@@ -5,6 +5,7 @@ import Page2 from "./Routes/page2";
 import PageBusiness from "./Routes/PageBusiness";
 import Art from "./Routes/Arts";
 import Page9 from "./Routes/BusinessAdult"
+import JobPage from "./Routes/JobOpportunities";
 
 const Nopage =() => {
   
@@ -27,6 +28,7 @@ const PageContent = ()=>{
                 <Route path="Art" element={ <Art/> }/>
                 <Route path="smallpage" element={ <PageBusiness/> }/>
                 <Route path="page9" element={ <Page9/> }/>
+                <Route path="JobOpportunities" element={<JobPage />} />
 
             </Routes>
         </Grid>
