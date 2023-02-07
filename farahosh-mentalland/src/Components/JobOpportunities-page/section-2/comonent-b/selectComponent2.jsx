@@ -66,7 +66,7 @@ export default function MultipleSelectChip2() {
         <InputLabel id="demo-multiple-chip-label">
         <LocationOnIcon />
         City, State, Zip code or Remote...
-        <ExpandMoreIcon />
+        {/* <ExpandMoreIcon /> */}
         </InputLabel>
         <Select
         labelStyle={{ color: '#ff0000' }}
