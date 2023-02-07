@@ -2,7 +2,8 @@
 import "./button.styles.css";
 
 const BUTTON_TYPE_CLASSES = {
-    navigationButton: "navigation-button"
+    navigationButton: "navigation-button",
+    posterButton: "poster-button"
 }
 
 const Button = ({ children, buttonType, ...otherProps }) => {
