@@ -13,14 +13,15 @@ import PersonalCard from "../card/personalityCard"
 
 const SliderSection = ({data,title , text}) => {
     const theme = useTheme();
-    var matches = 3;
+    var matches = 4;
     matches = useMediaQuery(theme.breakpoints.down('md'))?1:false;
-    matches = matches?matches:3;
+    matches = matches?matches:4;
     
     return ( 
-        <Box  sx={{overflowY:"visible"}}>
-        <Typography sx={{fontFamily:"Gilroy-SemiBold",fontSize:{lg:"30px",xs:"15px"},py:2,textAlign:"left"}}>{title}</Typography>
-            <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">
+        <Box  sx={{overflowY:"visible"}} className="flex flex-col align-middle justify-around items-center">
+        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"15px"},py:2,textAlign:"center"}}>{title}</Typography>
+        <Typography sx={{fontFamily:'Gilroy-Regular',width:{lg:"1200px" , xs: "200px"} ,fontSize:{lg:"22px",xs:"15px"},py:2,textAlign:"center"}}>{text}</Typography>
+            <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={0}  effect="fade">
                                 {
                                     data.map((item ,index)=>(
                                         <SwiperSlide key={index} virtualIndex={index}>

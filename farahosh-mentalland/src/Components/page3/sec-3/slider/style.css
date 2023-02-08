@@ -1,5 +1,8 @@
 .page2 .swiper{
-    overflow: visible;
+    width: 1240px;
+}
+.page2 .swiper-wrapper{
+    
 }
 .page2 .swiper-button-prev,
 .page2 .swiper-button-next{
@@ -8,8 +11,8 @@
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    top:-8%;
-    right: 0px;
+    top:-40%;
+    right: 40px;
 }
 .page2 .swiper-button-prev::after,
 .page2 .swiper-button-next::after{
@@ -17,7 +20,7 @@
     color: white;
 }
 .page2 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: 90%!important;
+    left: 88%!important;
 }
 
 @media only screen and (max-width: 1200px) {

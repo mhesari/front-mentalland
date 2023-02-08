@@ -1,0 +1,53 @@
+.services_bg{
+    background: url("../../../assests/image/Rectangle 68.png");
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 246px;
+}
+.services_bg img{
+    transform: scale(0.4);
+}
+
+.services_bg:hover{
+    background: url("../../../assests/image/Rectangle 68 (1).png") !important;
+}
+.ZPattern_img{
+    width: 700px;
+height: 656px;
+}
+.ZPattern_context h3{
+    width: 382px;
+height: 42px;
+
+font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 42px;
+text-transform: uppercase;
+color: #000B0C;
+
+}
+.ZPattern_context{
+    padding-right: 6%;
+}
+.ZPattern_context p{
+    width: 580px;
+height: 360px;
+
+font-family: 'Gilroy-Regular';
+font-size: 21px;
+line-height: 40px;
+color: #000B0C;
+}
+.ZPattern_context ul{
+    margin-top: 4%;
+}
+.ZPattern_context ul li{
+    width: 583px;
+font-family: 'Gilroy-Regular';
+font-size: 21px;
+line-height: 40px;
+color: #000B0C;
+}

@@ -1,0 +1,19 @@
+.ZPattern_context h3{
+    width: 538px;
+height: 42px;
+font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 42px;
+text-transform: uppercase;
+color: #000B0C;
+}
+.ZPattern_context p{
+    width: 567px;
+height: 476px;
+font-family: 'Gilroy-Regular';
+font-size: 20px;
+line-height: 40px;
+color: #000B0C;
+}
