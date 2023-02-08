@@ -1,5 +1,5 @@
 .articles_list{
-    width: 1240px;
+    width: 90%;
 }
 .articles_bg{
     width: 1440px;
@@ -91,9 +91,63 @@ text-transform: capitalize;
 color: #000B0C;
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1500px) {
     .articles_bg{
         width: 85%;
     }
     
+}
+@media only screen and (max-width:1200px) {
+    .articlesSection_title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .articles_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article{
+        width: 300px !important;
+    }
+    .articleContext{
+        width: 250px;
+        height: fit-content;
+    }
+    .articleContext h5{
+        font-size: 10px;
+        text-align: center;
+    }
+    .articleContext p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .articleImg{
+        transform: rotate(180deg);
+        -ms-transform:      rotate(270deg);
+        -moz-transform:     rotate(270deg);
+        -webkit-transform:  rotate(270deg);
+        -o-transform:       rotate(270deg);
+        width: 1px;
+        height: 150px;
+    }
+    .section6_title{
+        font-size: 15px;
+        width: 300px;
+        margin-left: 5%;
+        height: fit-content;
+    }
+    .section6_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    .section6_accordion{
+        width: 85%;
+        height: fit-content;
+    }
+    .Accordionlist_imges{
+        display: none;
+    }
 }

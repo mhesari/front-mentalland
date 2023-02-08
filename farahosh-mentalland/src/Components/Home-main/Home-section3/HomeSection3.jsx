@@ -6,7 +6,7 @@ import Cardfooter from "../../../assests/image/Rectangle 56.png";
 
 const Homesection3 = () => {
     return ( 
-        <div className="flex flex-col align-middle justify-items-center items-center  pt-20">
+        <div className="flex flex-col align-middle justify-items-center items-center  pt-20 pb-20">
             <div className={styles.section3_context}>
                 <h3 className={styles.section3_title}>Our vision & mission</h3>
                 <p className={styles.section3_text}>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. </p>
