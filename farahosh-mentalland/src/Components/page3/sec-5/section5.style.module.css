@@ -21,3 +21,20 @@ line-height: 40px;
 color: #000B0C;
 margin-top: 4%;
 }
+@media only screen and (max-width:1000px) {
+    .ZPattern_img{
+       width: 320px;
+    }
+    .ZPattern_context h3{
+        font-size: 18px;
+        width: 320px;
+        text-align: center;
+    }
+    .ZPattern_context p{
+        width: 300px;
+        padding-left: 5%;
+        margin-bottom: 15%;
+        text-align: center;
+        font-size: 12px;
+    }
+}

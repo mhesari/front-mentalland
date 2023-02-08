@@ -43,7 +43,8 @@
 
 }
 
-.z-pattern-text h1 {
+.z-pattern-text h1,
+.z-pattern-title{
   font-family: "alice-regular";
   font-weight: 700;
   font-size: 38px;
@@ -51,7 +52,8 @@
   transition: all 0.3s ;
 }
 
-.z-pattern-text h2 {
+.z-pattern-text h2 ,
+.z-pattern-title2{
   font-family: "alice-regular";
   font-weight: 400;
   font-size: 35px;
@@ -84,12 +86,14 @@
   justify-content: center;
     
   }
-  .z-pattern-text h1 {
+  .z-pattern-text h1 
+  ,.z-pattern-title{
     font-weight: 700;
     font-size: 20px;
   }
   
-  .z-pattern-text h2 {
+  .z-pattern-text h2 ,
+  .z-pattern-title2{
     font-weight: 400;
     font-size: 26px;
   }
@@ -126,12 +130,14 @@
     line-height: 37px;
     justify-content: center;
   }
-  .z-pattern-text h1 {
+  .z-pattern-text h1 
+  ,.z-pattern-title{
     font-weight: 700;
     font-size: 28px;
   }
   
-  .z-pattern-text h2 {
+  .z-pattern-text h2 ,
+  .z-pattern-title2{
     font-weight: 400;
     font-size: 28px;
   }
@@ -162,12 +168,14 @@
 
     }
     
-    .z-pattern-text h1 {
+    .z-pattern-text h1,
+    .z-pattern-title {
       font-weight: 700;
       font-size: 38px;
     }
     
-    .z-pattern-text h2 {
+    .z-pattern-text h2,
+    .z-pattern-title2 {
       font-weight: 400;
       font-size: 35px;
     }

@@ -10,6 +10,7 @@ import ArtsChildren from "./Routes/ArtsChildren";
 import ArtsAdults from "./Routes/ArtAdults";
 import JobPage from "./Routes/JobOpportunities";
 import Page3 from "./Routes/page3";
+import Page4 from "./Routes/page4";
 
 const Nopage =() => {
   
@@ -37,6 +38,7 @@ const PageContent = ()=>{
                 <Route path="artsAdults"  element={<ArtsAdults/>}/>
                 <Route path="JobOpportunities" element={<JobPage />} />
                 <Route path="page3" element={<Page3 />} />
+                <Route path="page4" element={<Page4 />} />
             </Routes>
         </Grid>
     )

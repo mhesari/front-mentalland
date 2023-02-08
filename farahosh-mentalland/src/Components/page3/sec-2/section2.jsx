@@ -1,7 +1,7 @@
 import ZPattern from "../../z-pattren/z-pattern.component";
 import pic1 from "../../../assests/image/Rectangle 67.png";
 import { Box } from "@mui/system";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography  , Stack  } from "@mui/material";
 import pic2 from "../../../assests/image/Mask group.png";
 import styles from "./section2.style.module.css";
 
@@ -65,6 +65,12 @@ const Section2 = () => {
             </Grid>
         </Box>
               <ZPattern zPatternType={"zPatternLtr"} >
+              <Stack
+          direction={{ md: "column", lg: "row" }}
+          spacing={3}
+          justifyContent="center"
+          alignItems="flex-start"
+        >
         <img className={styles.ZPattern_img} alt="" src={pic1} />
         <div className={styles.ZPattern_context}>
         <h3>
@@ -80,6 +86,7 @@ const Section2 = () => {
             <li>Lorem ipsum dolor sit amet consectetur.</li>
         </ul>
         </div>
+        </Stack>
         </ZPattern>
         </div>
       
