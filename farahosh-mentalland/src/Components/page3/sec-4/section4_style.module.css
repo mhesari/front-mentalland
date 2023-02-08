@@ -22,18 +22,17 @@ color: #000B0C;
         padding: 0;
     }
     .ZPattern_img{
-       width: 320px;
     }
     .ZPattern_context h3{
         font-size: 18px;
-        width: 320px;
+        width: 100%;
+        height: fit-content;
         text-align: center;
     }
     .ZPattern_context p{
-        width: 300px;
-        padding-left: 5%;
-        margin-bottom: 15%;
+        width: 100%;
         text-align: center;
+        height: fit-content;
         font-size: 12px;
     }
 }

@@ -9,10 +9,14 @@ import styles from "./section2.style.module.css";
 const Section2 = () => {
     return ( 
         <div>
-        <Box>
+        <Box display={'flex'} alignItems="center" flexDirection={"column"}>
         <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"15px"},py:2,textAlign:"center"}}>Adults Psychology Services</Typography>
-            <Grid container display={"flex"} direction="row" justifyContent={"space-between"} padding={7}>
-                <div className="flex flex-col justify-between align-middle  items-center">
+            <Grid container
+              direction="row"
+  justifyContent="center"
+  alignItems="center">
+            <Grid xs={6}  md={4} lg={2}>
+            <div  className="flex flex-col justify-between align-middle  items-center">
                     <div className={styles.services_bg}>
                         <img
                         alt="" src={pic2} />
@@ -21,39 +25,9 @@ const Section2 = () => {
                     Anxiety
                     </p>
                 </div>
-                <div className="flex flex-col justify-between align-middle  items-center">
-                    <div className={styles.services_bg}>
-                        <img
-                        alt="" src={pic2} />
-                    </div>
-                    <p>
-                    Anxiety
-                    </p>
-                </div> <div className="flex flex-col justify-between align-middle  items-center">
-                    <div className={styles.services_bg}>
-                        <img
-                        alt="" src={pic2} />
-                    </div>
-                    <p>
-                    Anxiety
-                    </p>
-                </div> <div className="flex flex-col justify-between align-middle  items-center">
-                    <div className={styles.services_bg}>
-                        <img
-                        alt="" src={pic2} />
-                    </div>
-                    <p>
-                    Anxiety
-                    </p>
-                </div> <div className="flex flex-col justify-between align-middle  items-center">
-                    <div className={styles.services_bg}>
-                        <img
-                        alt="" src={pic2} />
-                    </div>
-                    <p>
-                    Anxiety
-                    </p>
-                </div> <div className="flex flex-col justify-between align-middle  items-center">
+            </Grid>
+            <Grid xs={6} md={4} lg={2}>
+            <div  className="flex flex-col justify-between align-middle  items-center">
                     <div className={styles.services_bg}>
                         <img
                         alt="" src={pic2} />
@@ -62,6 +36,40 @@ const Section2 = () => {
                     Anxiety
                     </p>
                 </div>
+            </Grid>
+            <Grid xs={6} md={4} lg={2}>
+            <div  className="flex flex-col justify-between align-middle  items-center">
+                    <div className={styles.services_bg}>
+                        <img
+                        alt="" src={pic2} />
+                    </div>
+                    <p>
+                    Anxiety
+                    </p>
+                </div>
+            </Grid>
+            <Grid xs={6} md={4} lg={2}>
+            <div  className="flex flex-col justify-between align-middle  items-center">
+                    <div className={styles.services_bg}>
+                        <img
+                        alt="" src={pic2} />
+                    </div>
+                    <p>
+                    Anxiety
+                    </p>
+                </div>
+            </Grid>
+            <Grid xs={6} md={4} lg={2}>
+            <div  className="flex flex-col justify-between align-middle  items-center">
+                    <div className={styles.services_bg}>
+                        <img
+                        alt="" src={pic2} />
+                    </div>
+                    <p>
+                    Anxiety
+                    </p>
+                </div>
+            </Grid>
             </Grid>
         </Box>
               <ZPattern zPatternType={"zPatternLtr"} >
@@ -73,10 +81,10 @@ const Section2 = () => {
         >
         <img className={styles.ZPattern_img} alt="" src={pic1} />
         <div className={styles.ZPattern_context}>
-        <h3>
+        <h3 className="z-pattern-title2">
         Adults Psychology
         </h3>
-        <p>
+        <p className="z-pattern-text">
         Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.
         </p>
         <ul>

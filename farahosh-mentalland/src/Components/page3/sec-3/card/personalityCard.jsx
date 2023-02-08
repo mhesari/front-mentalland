@@ -16,7 +16,7 @@ export default function PersonalCard({img , caption}) {
           alt=""
         />
         <CardContent>
-        <Typography sx={{fontFamily:"Gilroy-Regular" , fontSize:"13px",textAlign:"left",px:1 }}>{caption}</Typography>
+        <Typography sx={{fontFamily:"Alice" , fontSize:"13px",textAlign:"center",px:1 }}>{caption}</Typography>
         </CardContent>
       </CardActionArea>
     </Card>

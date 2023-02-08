@@ -38,18 +38,7 @@ justify-content: center;
 text-align: center;
 
 }
-/* .boxp {
-background: rgba(255, 255, 255, 0.08);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.3px);
--webkit-backdrop-filter: blur(2.3px);
-border: 1px solid rgba(255, 255, 255, 0.15);
-padding: 10px 10px;
-margin: 0 auto;
-width: 80%;
-margin-top: 10px;
-} */
+
 @media only screen and (max-width: 900px) {
 .container {
 background-image: url("../../../assests/image/backgroundsec1.png");
@@ -70,7 +59,7 @@ padding: 20px 0px;
 .box h1 {
 color: #eda12f;
 font-family: "alice-regular";
-font-size: 50px;
+font-size: 25px;
 text-align: center;
 font-weight: 400;
 margin-top: 30px;
@@ -82,10 +71,11 @@ font-size: 20px;
 justify-content: center;
 
 }
-.boxp {
+.boxp p{
     padding: 10px 5px;
     margin: 0 auto;
     width: 90%;
+    font-size: 14px;
     margin-top: 20px;
 }
 }

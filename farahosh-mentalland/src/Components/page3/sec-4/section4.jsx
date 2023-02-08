@@ -6,7 +6,7 @@ import styles from "./section4_style.module.css";
 
 const Section4 = () => {
     return ( 
-        <Box padding={15}>
+        <Box>
               <ZPattern>
               <Stack
           direction={{ md: "column", lg: "row" }}
