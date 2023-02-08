@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material"
 export const BlueButtonsForm = ({ children }) => {
     return (
-        <Typography sx={{ fontSize: { lg: "18px", xs: "12px" }, fontFamily: "Gilroy-Regular", background: "#E6F0F6", borderRadius: "2px", marginRight: "10px", padding: "6px 12px" }}>{children}</Typography>
+        <Typography  sx={{ fontSize: { lg: "18px", xs: "12px" },margin:{xs:"10px 4px",md:"0px 4px"}, fontFamily: "Gilroy-Regular", background: "#E6F0F6", borderRadius: "2px", marginRight: "10px", padding: "6px 12px" }}>{children}</Typography>
 
     )
 }

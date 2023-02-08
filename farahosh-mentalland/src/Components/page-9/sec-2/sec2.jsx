@@ -11,7 +11,7 @@ const Sec1 = () => {
           spacing={3}
           justifyContent="space-around"
           alignItems="center"
-          sx={{width:"90%",margin:"0px solid"}}
+          sx={{width:"90%",margin:{xs:"200px auto",md:"0px solid"}}}
         >
           <div className="z-pattern-image" >
             <img src={Img1} />
