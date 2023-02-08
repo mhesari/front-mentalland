@@ -9,8 +9,8 @@ import styles from "./section2.style.module.css";
 const Section2 = () => {
     return ( 
         <div>
-        <Box display={'flex'} alignItems="center" flexDirection={"column"}>
-        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"15px"},py:2,textAlign:"center"}}>Adults Psychology Services</Typography>
+        <Box display={'flex'} alignItems="center" marginTop={{md:"150px"}} flexDirection={"column"}>
+        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"20px"},py:8,textAlign:"center"}}>Adults Psychology Services</Typography>
             <Grid container
               direction="row"
   justifyContent="center"
@@ -72,8 +72,10 @@ const Section2 = () => {
             </Grid>
             </Grid>
         </Box>
-              <ZPattern zPatternType={"zPatternLtr"} >
+            <ZPattern zPatternType={"zPatternLtr"} >
               <Stack
+              marginTop={{md:"200px"}}
+              marginBottom={{md:"200px"}}
           direction={{ md: "column", lg: "row" }}
           spacing={3}
           justifyContent="center"

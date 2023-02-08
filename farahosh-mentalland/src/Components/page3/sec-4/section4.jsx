@@ -6,7 +6,7 @@ import styles from "./section4_style.module.css";
 
 const Section4 = () => {
     return ( 
-        <Box>
+        <Box marginTop={{md:"200px"}} marginBottom={{md:"200px"}} >
               <ZPattern>
               <Stack
           direction={{ md: "column", lg: "row" }}

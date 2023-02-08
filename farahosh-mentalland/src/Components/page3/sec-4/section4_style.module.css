@@ -25,12 +25,15 @@ color: #000B0C;
     }
     .ZPattern_context h3{
         font-size: 18px;
+        margin-top: 8%;
+        margin-bottom: 8%;
         width: 100%;
         height: fit-content;
         text-align: center;
     }
     .ZPattern_context p{
         width: 100%;
+        margin-bottom: 8%;
         text-align: center;
         height: fit-content;
         font-size: 12px;

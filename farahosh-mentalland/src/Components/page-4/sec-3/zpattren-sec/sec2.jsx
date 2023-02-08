@@ -6,7 +6,7 @@ import ZPattern from "../../../z-pattren/z-pattern.component";
 
 const Sec2 = () => {
     return ( 
-        <Box>
+        <Box padding={{lg:"200px"}}>
               <ZPattern>
               <Stack
           direction={{ md: "column", lg: "row" }}

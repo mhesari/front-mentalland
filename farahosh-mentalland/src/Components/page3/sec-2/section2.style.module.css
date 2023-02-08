@@ -47,6 +47,8 @@ color: #000B0C;
     .ZPattern_img{
     }
     .ZPattern_context h3{
+        margin-top: 8%;
+        margin-bottom: 8%;
         width: 100%; 
         height: fit-content;
         text-align: center;
@@ -62,6 +64,9 @@ color: #000B0C;
         width: 100%;
         font-size: 13px;
         text-align: center;
+    }
+    .ZPattern_context ul{
+        margin-bottom: 25%;
     }
     
 }
