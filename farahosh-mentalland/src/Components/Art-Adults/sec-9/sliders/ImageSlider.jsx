@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation} from "swiper";
 import {useTheme} from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
-import { Typography } from "@mui/material";
+
 
 const ImageSlider = ({data,title , text}) => {
     const theme = useTheme();
