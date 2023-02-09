@@ -6,7 +6,8 @@ import styles from "./section4_style.module.css";
 
 const Section4 = () => {
     return ( 
-        <Box marginTop={{md:"200px"}} marginBottom={{md:"200px"}} >
+        <Box marginTop={{md:"100px"}} padding={{md:"100px"}} marginBottom={{md:"100px"}} >
+        <div className={styles.ZPattern}>
               <ZPattern>
               <Stack
           direction={{ md: "column", lg: "row" }}
@@ -25,6 +26,7 @@ const Section4 = () => {
         <img className="z-pattern-image" alt=" " src={pic1} />
         </Stack>
         </ZPattern>
+        </div>
         </Box>
      );
 }

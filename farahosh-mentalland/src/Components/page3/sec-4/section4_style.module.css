@@ -17,6 +17,17 @@ font-size: 20px;
 line-height: 40px;
 color: #000B0C;
 }
+.ZPattern{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media only screen and (min-width:1500px) {
+    .ZPattern{
+        justify-content: center;
+    }
+    
+}
 @media only screen and (max-width:1000px) {
     .css-1vnbi0q{
         padding: 0;

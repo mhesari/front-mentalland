@@ -39,6 +39,10 @@ text-align: center;
 
 }
 
+@media only screen and (min-width: 1500px){
+  
+}
+
 @media only screen and (max-width: 900px) {
 .container {
 background-image: url("../../../assests/image/backgroundsec1.png");

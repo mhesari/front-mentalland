@@ -72,6 +72,7 @@ const Section2 = () => {
             </Grid>
             </Grid>
         </Box>
+        <div className={styles.ZPattern}>
             <ZPattern zPatternType={"zPatternLtr"} >
               <Stack
               marginTop={{md:"200px"}}
@@ -79,7 +80,7 @@ const Section2 = () => {
           direction={{ md: "column", lg: "row" }}
           spacing={3}
           justifyContent="center"
-          alignItems="flex-start"
+          alignItems={{md:"flex-start" , lg:"center"}}
         >
         <img className={styles.ZPattern_img} alt="" src={pic1} />
         <div className={styles.ZPattern_context}>
@@ -98,6 +99,7 @@ const Section2 = () => {
         </div>
         </Stack>
         </ZPattern>
+        </div>
         </div>
       
      );

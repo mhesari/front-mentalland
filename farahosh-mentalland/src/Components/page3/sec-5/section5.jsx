@@ -5,8 +5,9 @@ import { Stack } from "@mui/material";
 
 const Section5 = () => {
     return ( 
+        <div className={styles.ZPattern}>
         <ZPattern>
-         <Stack marginTo={{xs:"30px" , md:"0"}}
+         <Stack marginTop={{xs:"30px" , md:"0"}}
          marginBottom={{md:"200px"}}
           direction={{ md: "column", lg: "row" }}
           spacing={3}
@@ -23,6 +24,7 @@ const Section5 = () => {
         </div>
         </Stack>
         </ZPattern>
+        </div>
      );
 }
  

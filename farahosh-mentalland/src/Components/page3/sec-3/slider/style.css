@@ -1,5 +1,6 @@
 .page2 .swiper{
-    width: 1240px;
+    width: 80%;
+    overflow-x: visible;
 }
 .page2 .swiper-wrapper{
     
