@@ -54,7 +54,7 @@ const SidebarLinks = ()=>{
                 }
                 
             </List>
-            <Box  sx={{ margin:"50px auto 0px" }}>
+            <Box  sx={{ display:"flex",alignItems:"center",justifyContent:"space-around"}}>
               <ButtonCustomised sx={{background:"#02979D" , color:"white" , width:{lg:"132px",xs:"100px"} , height:{lg:"40px",xs:"30px"} , m:1}}><BiLogIn style={{marginRight:"5px"}}/> Login</ButtonCustomised>
               <ButtonCustomised sx={{background:"#02979D" , color:"white" , width:{lg:"132px",xs:"100px"} , height:{lg:"40px",xs:"30px"} , m:1}}><SlHandbag style={{marginRight:"5px"}}/>Cart</ButtonCustomised>
               

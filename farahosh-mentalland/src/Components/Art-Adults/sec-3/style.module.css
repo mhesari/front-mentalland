@@ -23,16 +23,31 @@
     padding: 0px 70px;
     margin-top: 200px;
 }
+@media only screen and (max-width: 1200px) {
+    .sectionsContainer p , .sectionsContainer h2{
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 900px) {
 
     .box {
         margin-top: 150px;
         padding-left: 0px;
         padding-right: 0px;
-        max-width: 90%;
+        max-width: 0%;
     }
     .box p{
         margin-left: 40px;
-
-    }
+        text-align: center!important;
+        }
+        
+        .sectionsContainer {
+            padding: 0px 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .sectionsContainer p{
+            text-align: center;
+            line-height: 26px;
+        }
 }

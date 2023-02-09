@@ -20,8 +20,8 @@ const ImageSlider = () => {
     return ( 
         <>
          
-                <Box sx={{overflowY:"visible",pt:15,pb:30}}>
-                <Typography sx={{fontFamily:"alice-regular",fontSize:{lg:"40px",xs:"20px"},py:2 ,mb:25,textAlign:"center"}}>WHAT OUR PATIENTS SAY ABOUT US</Typography>
+                <Box sx={{overflowY:"visible",pt:15,pb:10}}>
+                <Typography sx={{fontFamily:"alice-regular",fontSize:{lg:"40px",xs:"20px"},py:{xs:0,md:2},mb:{md:25,xs:4},textAlign:"center"}}>WHAT OUR PATIENTS SAY ABOUT US</Typography>
                     <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">
                                         {
                                             data.map((item ,index)=>(

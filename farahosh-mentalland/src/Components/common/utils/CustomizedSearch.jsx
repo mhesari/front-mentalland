@@ -3,29 +3,31 @@ import {InputBase  , styled} from '@mui/material';
 export const Searchs = styled('div')(({ theme }) => ({
   position: 'relative',
   '&:hover': {
-    background: "none",
+    background: "#2ea2aa",
   },
-  width:"600px",
+  width:"300px",
   borderRadius:"30px",
   background:"white",
   fontFamily:"Gilroy-Medium",
   color:"black",
   [theme.breakpoints.up('sm')]: {
-    width: 'auto',
+    width: '300px',
   },
 
 }));
 export const Searchs2 = styled('div')(({ theme }) => ({
+  background:'rgba(0,0,0,0.3)',
   position: 'relative',
   '&:hover': {
-    background: "none",
+    background: "#2ea2aa",
   },
   width:"200px",
   borderRadius:"30px",
+  fontFamily:"Gilroy-Medium",
   background:"white",
   color:"black",
   [theme.breakpoints.up('sm')]: {
-    width: 'auto',
+    width: '200px',
   },
 
 }));

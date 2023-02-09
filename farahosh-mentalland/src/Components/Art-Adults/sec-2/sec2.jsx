@@ -13,7 +13,7 @@ const Sec2  = ()=>{
     const listTexts = ["Music","Painting","Acting","Writing","Dancing"]
     return(
         <>
-            <Grid container className={css.container} sx={{margin:{xs:"200px 0px",xl:"400px 0px"}}}>
+            <Grid container className={css.container} sx={{margin:{xs:"0px 0px",xl:"400px 0px"}}}>
                 <Grid xs={12} md={6}  sx={{margin:{xs:"100px 0px",md:"0px",xl:"200px 0px"}}}>
                     <Typography sx={{fontFamily:"alice-regular",fontSize:"37px",fontWeight:"400",textAlign:"center",my:4}}>ADULTS ART DEPARTMENT</Typography>
                     <ul className={css.list}>
@@ -30,7 +30,7 @@ const Sec2  = ()=>{
                         }
                     </ul>
                 </Grid>
-                <Grid xs={12} md={6} sx={{margin:{xs:"100px 0px",md:"0px"}}}>
+                <Grid xs={12} md={6} >
                     <img src={bg} className={css.img}/>
                 </Grid>
             </Grid>

@@ -8,12 +8,12 @@ import ImageSlider from "./sliders/ImageSlider";
 
 const Sec9= () => {
   return (
-      <Box sx={{background:"#DEF1F2",margin:"200px 0px",px:{ xs:2,md:9}}}>
+      <Box sx={{background:"#DEF1F2",margin:"100px 0px 60px",px:{ xs:2,md:9}}}>
           <Grid container>
-              <Grid xs={12} sm={12} md={4} sx={{display:"flex",alignItems:'center',marginBottom:{xs:"100px",md:"0px"}}}>
+              <Grid xs={12} sm={12} md={4} sx={{display:"flex",alignItems:'center'}}>
                     <Box>
-                        <Typography sx={{fontFamily:"alice-regular",fontSize:{xs:"25px",sm:"30px",md:"25px",lg:"34px"},color:"#000B0C" ,my:{xs:3,md:0 }}}>NEED AN ART COACH?</Typography>   
-                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{md:"17px",lg:"20px"},lineHeight:"40px"}}> 
+                        <Typography sx={{fontFamily:"alice-regular",fontSize:{xs:"25px",sm:"30px",md:"25px",lg:"34px"},color:"#000B0C",textAlign:{xs:"center",md:"left"} ,my:{xs:3,md:0 }}}>NEED AN ART COACH?</Typography>   
+                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{md:"17px",lg:"20px"},lineHeight:"40px",marginBottom:{xs:"100px",md:"0px"}}}> 
                         Lorem ipsum dolor sit amet consectetur. Urna posuere sed at fermentum nibh aliquet fusce. Justo gravida pharetra quam tincidunt nisl tellus rhoncus viverra amet. Sollicitudin sit lacus in eget arcu posuere. Vitae vitae mi pulvinar in. Erat egestas egestas interdum.    
                         </Typography>    
                     </Box>          

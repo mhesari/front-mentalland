@@ -8,12 +8,12 @@ import ImageSlider from "./sliders/ImageSlider";
 
 const Sec9= () => {
   return (
-      <Box sx={{background:"#f8e4eb",margin:"200px 0px",px:{ xs:2,md:9}}}>
+      <Box sx={{background:"#f8e4eb",margin:"100px 0px 0px",px:{ xs:2,md:9}}}>
           <Grid container>
               <Grid xs={12} sm={12} md={4} sx={{display:"flex",alignItems:'center',marginBottom:{xs:"100px",md:"0px"}}}>
                     <Box>
-                        <Typography sx={{fontFamily:"alice-regular",fontSize:{xs:"25px",sm:"30px",md:"25px",lg:"34px"},color:"#000B0C" ,my:{xs:3,md:0 }}}>NEED AN ART COACH?</Typography>   
-                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{md:"17px",lg:"20px"},lineHeight:"40px"}}> 
+                        <Typography sx={{fontFamily:"alice-regular",fontSize:{xs:"25px",sm:"30px",md:"25px",lg:"34px"},textAlign:{xs:"center",md:"left"},color:"#000B0C" ,my:{xs:3,md:0 }}}>NEED AN ART COACH?</Typography>   
+                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{md:"17px",lg:"20px"},lineHeight:"40px",textAlign:{xs:"center",md:"left"}}}> 
                         Lorem ipsum dolor sit amet consectetur. Urna posuere sed at fermentum nibh aliquet fusce. Justo gravida pharetra quam tincidunt nisl tellus rhoncus viverra amet. Sollicitudin sit lacus in eget arcu posuere. Vitae vitae mi pulvinar in. Erat egestas egestas interdum.    
                         </Typography>    
                     </Box>          
@@ -21,7 +21,7 @@ const Sec9= () => {
               <Grid xs={12} sm={12} md={8} >
                  
                 <Box sx={{height:{xs:"60%",md:"100%"},display:'flex',alignItems:"center"}}>
-                    <Box className="slide11 page12" sx={{width:{xs:"100%",sm:"60%",md:"100%"},maxWidth:"1800px",margin:{md:"0px auto",xs:"0px auto",sm:"100px auto 0px"} , overflowX:"hidden"}}>
+                    <Box className="slide11 page12" sx={{width:{xs:"100%",sm:"60%",md:"100%"},maxWidth:"1800px",margin:{md:"0px auto",xs:"0px auto",sm:"100px auto 0px"} ,pt:{xs:8,md:0}, overflowX:"hidden"}}>
                         <ImageSlider 
                             data={data}
                             title="Upcoming Public Seminars & Events"

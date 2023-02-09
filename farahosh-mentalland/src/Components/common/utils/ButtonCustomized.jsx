@@ -9,6 +9,6 @@ export const ButtonCustomised = styled(Button)(({theme})=>({
     color:"#00888D",
     "&:hover":{
         background:"white",
-        color:"#00888D"
+        color:"rgba(46, 162, 170,0.6)"
     }
 }))

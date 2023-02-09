@@ -1,5 +1,5 @@
 .container{
-    margin-top: 400px;
+    margin-top: 120px!important;
     background-color: #ebf7f7de;
     height: auto;
 }
@@ -39,5 +39,8 @@
         width: 30%!important;
         font-size: 17px;
      
+    }
+    .container{
+        margin-top: 100px!important;
     }
 }

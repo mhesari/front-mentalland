@@ -7,7 +7,7 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Typography } from "@mui/material";
 const Sec5= () => {
   return (
-      <Box sx={{background:"#DEF1F2",padding:"0px 100px",position:"relative",margin:{ xs:"500px 0px 200px",md:"300px 0px 200px",xl:"500px 0px 300px"}}}>
+      <Box sx={{background:"#DEF1F2",padding:{xs:"0px",md:"0px 100px"},position:"relative",margin:{ xs:"270px 0px 10px",sm:"600px 0px 0px",md:"300px 0px 200px",xl:"500px 0px 300px"}}}>
           <Box component="img"  src={S1} sx={{position:"absolute",left:"52%",zIndex:"0"}}/>
             <Grid container>
                 <Grid xs={12} sm={12} md={8} sx={{position:"relative"}}>

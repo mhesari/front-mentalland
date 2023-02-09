@@ -20,8 +20,8 @@ const ImageSlider = ({data,title , text}) => {
     return ( 
         <>
          
-                <Box  sx={{overflowY:"visible",pt:{lg:12 , md:5,sm:12,xs:12},pb:2}}>
-                        <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={0}  effect="fade">
+                <Box  sx={{overflowY:"visible",pt:{lg:12 , md:5,sm:0,xs:0},pb:{xs:0 ,md:2}}}>
+                        <Swiper  modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={0}  effect="fade">
                                             {
                                                 data.map((item ,index)=>(
                                                     <SwiperSlide key={index} virtualIndex={index}>

@@ -7,7 +7,7 @@ const Sec10 = () => {
         <>
             <Box sx={{position:"relative"}}>
                 <Box component="img" src={s1} sx={{position:"absolute",left:"0px"}}/>
-                <Box className="slider7" sx={{width:"90%",maxWidth:"1800px",margin:"0px auto",overflowX:"hidden",mt:13}}>
+                <Box className="slider7" sx={{width:"90%",maxWidth:"1800px",margin:"0px auto",overflowX:"hidden",mt:{md:10,xs:0}}}>
                     <ImageSlider />
                 </Box>
             </Box>

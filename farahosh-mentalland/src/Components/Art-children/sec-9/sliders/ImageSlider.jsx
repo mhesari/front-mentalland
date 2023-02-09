@@ -20,7 +20,7 @@ const ImageSlider = ({data,title , text}) => {
     return ( 
         <>
          
-                <Box  sx={{overflowY:"visible",pt:{lg:12 , md:5,sm:12,xs:12},pb:2}}>
+                <Box  sx={{overflowY:"visible",pt:{lg:12 , md:5,sm:12,xs:12}}}>
                         <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={0}  effect="fade">
                                             {
                                                 data.map((item ,index)=>(
