@@ -21,7 +21,8 @@ const SliderSection = ({data,title , text}) => {
         <Box  sx={{overflowY:"hidden" , overflowX:"hidden"}} className="flex flex-col align-middle justify-around items-center pb-6">
         <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"24px"},py:2,textAlign:"center"}}>{title}</Typography>
         <Typography sx={{fontFamily:'Gilroy-Regular',width:{lg:"1200px" , xs: "200px"} ,fontSize:{lg:"22px",xs:"15px"},py:2,textAlign:"center"}}>{text}</Typography>
-        <Box className=" w-3/4 flex pb-8">
+        <Box   className="w-3/5">
+        <Box  sx={{overflowY:"visible" , overflowX:"visible"}} className=" w-full flex pb-8">
         <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper" spaceBetween={0}  effect="fade">
 
         {
@@ -33,6 +34,7 @@ const SliderSection = ({data,title , text}) => {
                                 }  
                                       
             </Swiper>
+        </Box>
         </Box>
             <Buuton>
                 see more

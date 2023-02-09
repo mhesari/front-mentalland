@@ -1,8 +1,14 @@
 .page2 .swiper{
     width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
     overflow-x: visible;
 }
 .page2 .swiper-wrapper{
+    height: 310px;
 }
 .page2 .swiper-button-prev,
 .page2 .swiper-button-next{
@@ -11,7 +17,7 @@
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    top:-40%;
+    top:5%;
     right: 40px;
 }
 .page2 .swiper-slide{
