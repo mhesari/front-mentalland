@@ -5,7 +5,8 @@ import pic1 from "../../../../assests/image/Rectangle 67 (1).png";
 
 const Sec1 = () => {
     return ( 
-        <Box display={"flex"} flexDirection="column" alignItems={"end"} justifyContent={"end"}>
+        <Box display={"flex"} flexDirection="column" alignItems={{xl:"center" , md:"end"}} justifyContent={{xl:"center" , md:"end"}}  marginBottom={{lg:"200px" , xs:"50px"}}>
+        <div className="flex flex-col justify-items-center align-middle">
             <ZPattern>
             <Stack
     direction={{ md: "column", lg: "row" }}
@@ -30,6 +31,7 @@ const Sec1 = () => {
   <img className="z-pattern-image" alt="" src={pic1} />
   </Stack>
             </ZPattern>
+            </div>
         </Box>
      );
 }

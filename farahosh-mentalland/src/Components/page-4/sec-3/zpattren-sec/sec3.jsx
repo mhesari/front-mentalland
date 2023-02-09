@@ -5,6 +5,7 @@ import pic1 from "../../../../assests/image/Group 930.png";
 
 const Sec3 = () => {
     return ( 
+        <div className={styles.ZPattern}>
         <ZPattern  zPatternType={"zPatternLtr"} >
         <Stack
     direction={{ md: "column", lg: "row" }}
@@ -23,6 +24,7 @@ const Sec3 = () => {
   </div>
   </Stack>
   </ZPattern>
+  </div>
      );
 }
  

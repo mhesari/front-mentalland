@@ -41,8 +41,8 @@ margin-top: 4%;
 
         }
     .ZPattern_context h3{
-        font-size: 18px;
         width: 100%;
+        height: fit-content;
         margin-bottom: 20px;
         margin-top: 20px;
         text-align: center;

@@ -10,7 +10,7 @@ const Section2 = () => {
     return ( 
         <div>
         <Box display={'flex'} alignItems="center" marginTop={{md:"150px"}} flexDirection={"column"}>
-        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"20px"},py:8,textAlign:"center"}}>Adults Psychology Services</Typography>
+        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"28px"},py:8,textAlign:"center"}}>Adults Psychology Services</Typography>
             <Grid container
               direction="row"
   justifyContent="center"

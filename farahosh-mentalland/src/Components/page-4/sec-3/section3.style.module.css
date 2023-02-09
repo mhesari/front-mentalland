@@ -1,5 +1,5 @@
 .section3_bg{
     background: url("../../../assests/image/Group\ 975.png");
-    width: 100%;
+   background-size: cover;
     height: fit-content;
 }

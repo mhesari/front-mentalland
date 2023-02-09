@@ -1,9 +1,8 @@
 .page2 .swiper{
-    width: 80%;
+    width: 100%;
     overflow-x: visible;
 }
 .page2 .swiper-wrapper{
-    
 }
 .page2 .swiper-button-prev,
 .page2 .swiper-button-next{

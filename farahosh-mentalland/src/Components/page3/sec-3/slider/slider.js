@@ -9,7 +9,7 @@ import {useTheme} from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { Typography } from "@mui/material";
 import PersonalCard from "../card/personalityCard"
-
+import Buuton from "../../../buttons/button.component.jsx";
 
 const SliderSection = ({data,title , text}) => {
     const theme = useTheme();
@@ -18,18 +18,26 @@ const SliderSection = ({data,title , text}) => {
     matches = matches?matches:4;
     
     return ( 
-        <Box  sx={{overflowY:"visible"}} className="flex flex-col align-middle justify-around items-center">
-        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"15px"},py:2,textAlign:"center"}}>{title}</Typography>
+        <Box  sx={{overflowY:"hidden" , overflowX:"hidden"}} className="flex flex-col align-middle justify-around items-center pb-6">
+        <Typography sx={{fontFamily:'Alice',fontSize:{lg:"35px",xs:"24px"},py:2,textAlign:"center"}}>{title}</Typography>
         <Typography sx={{fontFamily:'Gilroy-Regular',width:{lg:"1200px" , xs: "200px"} ,fontSize:{lg:"22px",xs:"15px"},py:2,textAlign:"center"}}>{text}</Typography>
-            <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper" spaceBetween={0}  effect="fade">
-                                {
+        <Box className=" w-3/4 flex pb-8">
+        <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper" spaceBetween={0}  effect="fade">
+
+        {
                                     data.map((item ,index)=>(
                                         <SwiperSlide key={index} virtualIndex={index}>
                                            <PersonalCard img={item.img} caption={item.caption} />
                                         </SwiperSlide>
                                     ))
-                                }            
+                                }  
+                                      
             </Swiper>
+        </Box>
+            <Buuton>
+                see more
+            </Buuton>
+            
         
     </Box>
      );

@@ -7,6 +7,7 @@ import ZPattern from "../../../z-pattren/z-pattern.component";
 const Sec2 = () => {
     return ( 
         <Box padding={{lg:"200px"}}>
+        <div className={styles.ZPattern}>
               <ZPattern>
               <Stack
           direction={{ md: "column", lg: "row" }}
@@ -25,6 +26,7 @@ const Sec2 = () => {
         <img className="z-pattern-image" alt=" " src={pic1} />
         </Stack>
         </ZPattern>
+        </div>
         </Box>
      );
 }

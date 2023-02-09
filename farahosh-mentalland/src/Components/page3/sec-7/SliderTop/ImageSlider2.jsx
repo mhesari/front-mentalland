@@ -21,7 +21,7 @@ const ImageSlider = () => {
         <>
          
                 <Box sx={{overflowY:"visible",pt:5,pb:30}}>
-                <Typography sx={{fontFamily:"alice-regular",fontSize:{lg:"40px",xs:"20px"},py:2 ,mt:{xs:"0" , lg:"5.5rem"},mb:{xs:"20px" , lg:"11.5rem"},textAlign:"center"}}>WHAT OUR PATIENTS SAY ABOUT US</Typography>
+                <Typography sx={{fontFamily:"alice-regular",fontSize:{lg:"40px",xs:"28px"},py:2 ,mt:{xs:"0" , lg:"5.5rem"},mb:{xs:"20px" , lg:"11.5rem"},textAlign:"center"}}>WHAT OUR PATIENTS SAY ABOUT US</Typography>
                     <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">
                                         {
                                             data.map((item ,index)=>(
