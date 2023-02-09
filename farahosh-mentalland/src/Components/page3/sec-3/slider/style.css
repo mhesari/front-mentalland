@@ -31,9 +31,14 @@
     color: white;
 }
 .page2 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: 88%!important;
+    left: 83%!important;
 }
-
+@media only screen and (min-width:1500px) {
+    .page2 .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: 88%!important;
+    }
+    
+}
 @media only screen and (max-width: 1200px) {
     .page2 .swiper-button-prev,
     .page2 .swiper-button-next{
@@ -63,6 +68,10 @@
 }
 .page2 .swiper-button-prev,.page2 .swiper-rtl .swiper-button-next{
     left: 80%!important;
+}
+.page2 .swiper{
+    justify-content: flex-start;
+    height: 300px;
 }
 
 }

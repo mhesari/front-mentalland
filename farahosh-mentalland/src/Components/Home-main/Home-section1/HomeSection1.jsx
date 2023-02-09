@@ -77,9 +77,13 @@ const HomeSection1 = () => {
             <h3 className={styles.section1_servicesTitle}>OUR PROFESSIONAL SERVICES</h3>
                <div className={styles.servicContext}> 
                <Grid container
-                    direction="row"
+                    direction={
+                        {xs:"column" , md:"row"}
+                    }
                     justifyContent="center"
-                    alignItems="flex-start"
+                    alignItems={{
+                        xs:"center" , md:"flex-start"
+                    }}
                     gap={1}>
                     <Card className={styles.servic1}  onClick={() => setIsChecked(!isChecked)}>
                  <img className={styles.servic1pic} alt="" src={Heart} />
@@ -93,7 +97,7 @@ const HomeSection1 = () => {
             </Grid>
             <Collapse in={isChecked}>
             <div className={styles.serviceContext}>
-                <div className=" flex flex-col  justify-between align-middle">
+                <div className=" flex flex-col  justify-between align-middle sm:align-middle">
                     <p>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.</p>
                     <Button>learn more</Button>
                 </div>
