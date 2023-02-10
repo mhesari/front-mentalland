@@ -22,7 +22,7 @@ const Sec2  = ()=>{
                                 <li key={index} className={css.li}>
                                     <Typography className={css.sublist}>
                                         <Item />
-                                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:"20px",lineHeight:"40px"}}>{listTexts[index]}</Typography>
+                                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{sm:"20px",xs:"15px"},lineHeight:"40px"}}>{listTexts[index]}</Typography>
                                     </Typography>
                                     <CgArrowTopRight fontSize="30px"/>
                                 </li>

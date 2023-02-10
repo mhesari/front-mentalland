@@ -15,14 +15,14 @@ const Sec2  = ()=>{
         <>
             <Grid container className={css.container} sx={{margin:{xs:"0px 0px",xl:"400px 0px"}}}>
                 <Grid xs={12} md={6}  sx={{margin:{xs:"100px 0px",md:"0px",xl:"200px 0px"}}}>
-                    <Typography sx={{fontFamily:"alice-regular",fontSize:"37px",fontWeight:"400",textAlign:"center",my:4}}>ADULTS ART DEPARTMENT</Typography>
+                    <Typography sx={{fontFamily:"alice-regular",fontSize:{md:"37px",xs:"28px"},fontWeight:"400",textAlign:"center",my:4}}>ADULTS ART DEPARTMENT</Typography>
                     <ul className={css.list}>
                         {
                             listIcons.map((Item , index)=>(
                                 <li key={index} className={css.li}>
                                     <Typography className={css.sublist}>
                                         <Item />
-                                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:"20px",lineHeight:"40px"}}>{listTexts[index]}</Typography>
+                                        <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{xs:"15px",md:"20px"},lineHeight:"40px"}}>{listTexts[index]}</Typography>
                                     </Typography>
                                     <CgArrowTopRight fontSize="30px"/>
                                 </li>
