@@ -40,7 +40,7 @@ text-align: center;
 }
 
 @media only screen and (min-width: 1500px){
-  
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -63,7 +63,7 @@ padding: 20px 0px;
 .box h1 {
 color: #eda12f;
 font-family: "alice-regular";
-font-size: 25px;
+font-size: 28px;
 text-align: center;
 font-weight: 400;
 margin-top: 30px;
