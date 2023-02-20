@@ -1,0 +1,50 @@
+.bg_sec1{
+    background: url("../../../../src/assests//image/Rectangle 4556.png");
+    background-size: cover;
+    position: relative;
+    height: 920px;
+}
+
+.sec1_title{
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 73px;
+text-align: center;
+text-transform: uppercase;
+
+/* white */
+
+color: #FAFEFE;
+
+}
+.sec1_text{
+    position: absolute;
+    width: 1076px;
+height: 182px;
+left: 388px;
+top: 681px;
+background: rgba(0, 11, 12, 0.2);
+border: 1px solid #FAFEFE;
+backdrop-filter: blur(4px);
+color: #FAFEFE;
+
+font-family: 'Gilroy-Medium';
+font-size: 24px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.sec1_pic1{
+    position: absolute;
+    bottom:-50px;
+    left: 48.5%;
+}
+
+

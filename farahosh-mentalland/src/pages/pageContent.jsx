@@ -11,6 +11,7 @@ import ArtsAdults from "./Routes/ArtAdults";
 import JobPage from "./Routes/JobOpportunities";
 import Page3 from "./Routes/page3";
 import Page4 from "./Routes/page4";
+import Contactus from "./Routes/Contactus";
 
 const Nopage =() => {
   
@@ -29,6 +30,7 @@ const PageContent = ()=>{
             <Routes>
                 <Route index element={<Home/>} />
                 <Route path="*" element={ <Nopage/> }/>
+                <Route path="Contactus" element={<Contactus />} />
                 <Route path="page2" element={ <Page2/> }/>
                 <Route path="Art" element={ <Art/> }/>
                 <Route path="smallpage" element={ <PageBusiness/> }/>
