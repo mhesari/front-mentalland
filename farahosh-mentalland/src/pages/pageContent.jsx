@@ -12,6 +12,7 @@ import JobPage from "./Routes/JobOpportunities";
 import Page3 from "./Routes/page3";
 import Page4 from "./Routes/page4";
 import Contactus from "./Routes/Contactus";
+import Position from "./Routes/Position"
 
 const Nopage =() => {
   
@@ -41,7 +42,7 @@ const PageContent = ()=>{
                 <Route path="JobOpportunities" element={<JobPage />} />
                 <Route path="page3" element={<Page3 />} />
                 <Route path="page4" element={<Page4 />} />
-                 <Route path="aboutus" element={<AboutUs />}/>
+                 <Route path="position" element={<Position />}/>
 
             </Routes>
         </Grid>
