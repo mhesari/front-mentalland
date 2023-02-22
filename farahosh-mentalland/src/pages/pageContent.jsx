@@ -41,6 +41,8 @@ const PageContent = ()=>{
                 <Route path="JobOpportunities" element={<JobPage />} />
                 <Route path="page3" element={<Page3 />} />
                 <Route path="page4" element={<Page4 />} />
+                 <Route path="aboutus" element={<AboutUs />}/>
+
             </Routes>
         </Grid>
     )
