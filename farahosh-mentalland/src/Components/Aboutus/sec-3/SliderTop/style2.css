@@ -1,4 +1,4 @@
-.slider19 .swiper{
+/* .slider19 .swiper{
     overflow: visible;
 }
 .slider19 .swiper-slide img{
@@ -111,13 +111,13 @@
   }
 
 
-  .swiper-slide ,.swiper-slide img , .swiper-slide div {
+  .slider19 .swiper-slide , .slider19 .swiper-slide img ,.slider19 .swiper-slide div {
     width:128px;
     height: 94px;
     
 }
-.swiper-slide-next ,.swiper-slide-next img , .swiper-slide-next div {
+.slider19 .swiper-slide-next ,.slider19 .swiper-slide-next img ,.slider19 .swiper-slide-next div {
     width:650px;
     height: 418px;
     
-}
+} */
