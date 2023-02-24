@@ -14,6 +14,7 @@ import Page4 from "./Routes/page4";
 import Contactus from "./Routes/Contactus";
 import Position from "./Routes/Position"
 import Aboutus from "./Routes/Aboutus"
+import Job from "./Routes/Job";
 
 const Nopage =() => {
   
@@ -45,6 +46,7 @@ const PageContent = ()=>{
                 <Route path="page4" element={<Page4 />} />
                 <Route path="position" element={<Position />}/>
                 <Route path="aboutus" element={<Aboutus />}/>
+                <Route path="Job" element={<Job />} />
 
             </Routes>
         </Grid>
