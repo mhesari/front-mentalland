@@ -4,7 +4,7 @@ import pic1 from "../../../assests/image/Group 1101.png";
 const ContactSection1 = () => {
     return (  
         <div className={styles.bg_sec1}>
-            <div>
+            <div className="flex flex-col justify-items-center align-middle items-center">
             <h3 className={styles.sec1_title}>Contact Us</h3>
             <div className={styles.sec1_text}>
             <p>

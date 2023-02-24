@@ -9,3 +9,8 @@
     width:100%;
     height: 500px;
 }
+@media screen and (max-width:600px) {
+    .map{
+        height: 200px;
+    }
+}

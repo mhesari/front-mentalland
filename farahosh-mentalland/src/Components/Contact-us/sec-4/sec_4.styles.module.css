@@ -21,3 +21,15 @@ background: #EBF7F7;
     right: 2%;
     bottom: 1px;
 }
+@media screen and (max-width:600px) {
+    .subscribe_context{
+        width: 100%;
+    }
+    .subscribe_inputfild{
+        width: 90%;
+    }
+    .inputFildebtn{
+        right: -1%;
+    }
+    
+}
