@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import Mapir from "mapir-react-component";
 
 const Map = Mapir.setToken({

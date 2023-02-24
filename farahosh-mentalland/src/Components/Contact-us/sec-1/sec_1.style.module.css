@@ -5,7 +5,6 @@
     height: 920px;
     margin-bottom: 10%;
 }
-
 .sec1_title{
     position: absolute;
     top: 45%;
@@ -49,3 +48,14 @@ text-align: center;
 }
 
 
+
+@media only screen and (max-width: 1700px){
+    .sec1_title{
+        left : 36%;
+        top: 36%
+    }
+    .sec1_text{
+        top:600px;
+        left:180px;
+    }
+}
