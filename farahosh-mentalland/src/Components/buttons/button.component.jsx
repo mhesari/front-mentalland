@@ -3,7 +3,8 @@ import "./button.styles.css";
 
 const BUTTON_TYPE_CLASSES = {
     navigationButton: "navigation-button",
-    posterButton: "poster-button"
+    posterButton: "poster-button",
+    contactUsBtn : "contact-us-btn"
 }
 
 const Button = ({ children, buttonType, ...otherProps }) => {
