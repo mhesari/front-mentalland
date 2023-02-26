@@ -24,7 +24,7 @@ font-family: 'Gilroy-SemiBold';
 font-size: 35px;
 line-height: 45px;
 text-transform: uppercase;
-
+margin-bottom: 50px;
 color: #000B0C;
 }
 .articlePic{
@@ -61,8 +61,7 @@ font-family: 'Gilroy-SemiBold';
 font-size: 30px;
 line-height: 45px;
 text-transform: uppercase;
-margin-left: 100px;
-
+margin-top: 100px;
 color: #000B0C;
 }
 .section6_list{

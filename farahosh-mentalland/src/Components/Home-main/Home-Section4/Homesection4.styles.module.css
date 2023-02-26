@@ -21,13 +21,15 @@ text-transform: uppercase;
 color: #000B0C;
 }
 .section4_context{
+    width: 40%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
 }
 .section4_text{
     width: 80%;
-height: 200px;
+height: fit-content;
 left: 628px;
 top: 143px;
 display: flex;
@@ -83,6 +85,7 @@ color: #000B0C;
         height: fit-content;
     }
     .section4_context{
+        width: 100%;
         align-items: center;
         margin-bottom: 5rem;
     }

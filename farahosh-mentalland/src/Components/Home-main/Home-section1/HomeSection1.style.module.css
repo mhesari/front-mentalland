@@ -110,18 +110,22 @@ color: #FFFFFF;
 }
 .Item1{
 background: url("../../../assests/image/Rectangle 48.png");
+background-size: cover;
 /* background-color: #02979D; */
 }
 .Item2{
     background: url("../../../assests/image/Rectangle 47.png");
+    background-size: cover;
     /* background-color: #02979D; */
 }
 .Item3{
     background: url("../../../assests/image/Rectangle 46.png");
+    background-size: cover;
     /* background-color: #02979D; */
 }
 .Item4{
     background: url("../../../assests/image/Rectangle 45.png");
+    background-size: cover;
     /* background-color: #02979D; */
 }
 .servicContext{
@@ -153,6 +157,7 @@ background: url("../../../assests/image/Rectangle 48.png");
     background: url("../../../assests//image//Union.png") !important;
     border: none !important;
     box-shadow: none !important;
+    background-size: cover !important;
 }
 .servic1:hover > .servic1pic,
 .servic2:hover > .servic2pic,
@@ -193,7 +198,35 @@ line-height: 40px;
 color: #000B0C;
 
 }
-
+@media screen and (max-width:600px) {
+    .section1{
+        height: 2200px !important;
+    }
+}
+@media only screen and (min-width:800px) {
+.item1_bg,
+.item3_bg{
+    display: flex;
+    justify-content: end;
+}
+.showNumber{
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+}
+@media screen and (max-width:800px) {
+    .Item1,
+    .Item2,
+    .Item3,
+    .Item4{
+        width: 100%;
+    }
+    
+}
 @media only screen and (max-width:1200px) {
     .itemscontext{
         width: 100%;
@@ -223,15 +256,26 @@ height: 72px;
         background-size: cover;
     }
     .section1{
-        height: 2300px;
+        height: 1600px;
     }
     .section1_2{
        width: 100%;
        height: fit-content;
     }
+    .item1_bg,
+    .item3_bg{
+        display: flex;
+        justify-content: end;
+    }
+    .Item1,
+    .Item2,
+    .Item3,
+    .Item4{
+        width: 100%;
+    }
     .servic1,
-.servic2,
-.servic3{
+    .servic2,
+    .servic3{
     width: 100% !important;
 height: 250px !important;
 }
@@ -249,6 +293,7 @@ height: 250px !important;
     width: 90%;
     height: fit-content;
     font-size: 14px;
+    margin-top: 20px;
 line-height: 24px;
 }
 }

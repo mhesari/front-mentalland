@@ -20,7 +20,7 @@ const ImageSlider = () => {
     return ( 
         <>
          
-                <Box sx={{overflowY:"visible"}}>
+                <Box sx={{overflowY:"visible" , marginBottom:"150px"}}>
                 <Typography sx={{fontFamily:"Gilroy-SemiBold",fontSize:{lg:"30px",xs:"20px"},py:2}}>WHAT OUR STUDENTS SAY</Typography>
                 <Typography sx={{fontFamily:"Gilroy-Regular",fontSize:{lg:"17px",xs:"12px",md:"15px"} ,py:{lg:6,xs:3}}}>Lorem ipsum dolor sit amet consectetur. Ut turpis nunc ac felis sapien diam. Sed velit dignissim viverra natoque. Ut mattis egestas </Typography>
                     <Swiper modules={[ Navigation]}   navigation={true} slidesPerView={matches} className="mySwiper w-full h-full " spaceBetween={10}  effect="fade">

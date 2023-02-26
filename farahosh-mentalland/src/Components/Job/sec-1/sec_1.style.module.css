@@ -42,7 +42,7 @@ text-align: center;
 
 @media only screen and (max-width: 900px) {
 .container {
-background-image: url("../../../assests/image/backgroundsec1.png");
+background-image:  url("../../../assests/image/Rectangle 45 (3).png");
 width: 100%;
 background-size: cover;
 display: flex;

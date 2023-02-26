@@ -5,7 +5,7 @@ const Homesection4 = () => {
     return ( 
         <div className="flex flex-col items-center align-middle justify-items-center ">
          <div className={styles.section4}>
-        <div className=" flex flex-col lg:flex-row  align-middle justify-around items-center"> 
+        <div className=" flex flex-col  lg:justify-center lg:flex-row  align-middle justify-around items-center"> 
             <img className={styles.section4_pic} alt="" src={pic1} />
             <div className={styles.section4_context}>
                 <h4 className={styles.section4_title}>Mentalland on your phone</h4>

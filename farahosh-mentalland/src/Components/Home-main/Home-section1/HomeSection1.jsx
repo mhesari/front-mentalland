@@ -46,29 +46,35 @@ const HomeSection1 = () => {
             </div>
             <div className={styles.showNumber}>
                 <Grid   container
-                    direction="row"
-                    justifyContent="center"
                     alignItems="center">
-                    <div className={styles.Item1}>
+                    <Grid  xs={12} sm={6} lg={3}>
+                        <div className={styles.Item1}>
                         <h4>+4000</h4>
                         <p>Treated
                         Patients</p>
-                    </div>
-                    <div className={styles.Item2}>
+                    </div> 
+                    </Grid>
+                   <Grid   xs={12} sm={6}  lg={3}>
+                   <div className={styles.Item2}>
                     <h4>+250</h4>
                         <p>Graduacted
                         Art Students</p>
                     </div>
-                    <div className={styles.Item3}>
+                   </Grid>
+                   <Grid xs={12} sm={6} lg={3}>
+                   <div className={styles.Item3}>
                     <h4>+100</h4>
                         <p>Performed
                         Seminars</p>
                     </div>
-                    <div className={styles.Item4}>
+                   </Grid>
+                   <Grid xs={12} sm={6} lg={3}>
+                   <div className={styles.Item4}>
                     <h4>+1200</h4>
                         <p>job
                         opportunities</p>
                     </div>
+                   </Grid>
                 </Grid>
             </div>
         </div>
@@ -97,8 +103,8 @@ const HomeSection1 = () => {
             </Grid>
             <Collapse in={isChecked}>
             <div className={styles.serviceContext}>
-                <div className=" flex flex-col  justify-between align-middle sm:align-middle">
-                    <p>Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.</p>
+                <div className=" flex flex-col  justify-between align-middle items-center sm:align-middle">
+                    <p className="  text-center">Lorem ipsum dolor sit amet consectetur. Pretium rutrum nisi mollis sit tortor proin proin sagittis. Id nec suspendisse lacus erat. Vivamus orci bibendum at purus elit. Vel vehicula donec amet a dolor sollicitudin ut. Lectus cursus ipsum mi feugiat nulla enim. Nisl phasellus viverra quisque egestas in nec luctus ornare amet. In pellentesque volutpat urna ultrices vitae. Sed magna vitae placerat eu leo potenti semper id. Sed elementum eget adipiscing nisl in vestibulum. Volutpat.</p>
                     <Button>learn more</Button>
                 </div>
                 <img alt="" src={picOfService} />
