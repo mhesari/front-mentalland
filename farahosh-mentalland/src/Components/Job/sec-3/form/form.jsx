@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import Yup from 'yup';
 
 const Basic = () => {
   const [value, setValue] = React.useState(dayjs(''));
@@ -15,7 +16,7 @@ const Basic = () => {
   <Typography sx={{fontFamily:'Alice',fontSize:{lg:"40px",xs:"28px"}, marginBottom:{md:"0px" , xs:"20px"} ,textAlign:"left"}}> Become One of Us</Typography>
   <Typography sx={{fontFamily:'Gilroy-Medium',fontSize:{lg:"19px",xs:"12px"},lineHeight:{md:"40px"}, width:{md:"1239px"} , height:{md:"240px"}, marginLeft:{md:"30px"}, marginBottom:{md:"18px" , xs:"20px"} ,textAlign:"left"}}>Lorem ipsum dolor sit amet consectetur. Viverra pellentesque volutpat quis in erat. Sit aenean eget nascetur mus non. Enim a ut vitae felis convallis. Egestas enim diam ac nisi orci id tellus lobortis. Lacus in etiam rhoncus.</Typography>
     <Formik
-      initialValues={{Name:"" , lastName : "", sex: ["men" , "women"], phoneNumber :"" , mobileNumber:"",addres : "" , postalCard : "" ,   email: '', password: '' }}
+      initialValues={{Name:"" , lastName : "", sex: ["men" , "women"], country: ["iran" , "iraq"], city: ["qom" , "tehran" , "isfahan"], phoneNumber :"" , mobileNumber:"" , postalCard : "" ,   email: '', Address: '' }}
       validate={values => {
         const errors = {};
         if (!values.email) {
@@ -108,6 +109,23 @@ const Basic = () => {
           </Grid>
         </Grid>
         <Grid container>
+        <Grid md={3}>
+        <Stack>
+        <label>Sex</label>
+          <select name="sex" value={values.sex}  onChange={handleChange}
+        onBlur={handleBlur}
+        style={{ display: 'block' }}>
+            <option value="" label="">
+            </option>
+            <option value="man" label="man">
+              man
+              </option>
+              <option value="women" label="women">
+              women
+              </option>
+          </select>
+        </Stack>
+        </Grid>
           <Grid md={3}>
             <Stack>
               <label>Phone number</label>
@@ -125,7 +143,9 @@ const Basic = () => {
             </Stack>
           </Grid>
         </Grid>
-        <Stack>
+        <Grid container>
+          <Grid sm={3}>
+             <Stack>
         <label>Email address</label>
           <Field
             type="email"
@@ -136,14 +156,59 @@ const Basic = () => {
           />
           {errors.email && touched.email && errors.email}
         </Stack>
-          {/* <Field
-            type="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-          /> */}
-          {errors.password && touched.password && errors.password}
+        </Grid>
+          <Grid sm={3}>
+          <Stack>
+        <label>Country</label>
+          <select name="country" value={values.country}  onChange={handleChange}
+        onBlur={handleBlur}
+        style={{ display: 'block' }}>
+            <option value="" label="">
+            </option>
+            <option value="iran" label="iran">
+              Iran
+              </option>
+              <option value="iraq" label="iraq">
+              Iraq
+              </option>
+          </select>
+        </Stack>
+        </Grid>
+        <Grid sm={3}>
+        <Stack>
+        <label>City</label>
+          <select name="city" value={values.city}  onChange={handleChange}
+        onBlur={handleBlur}
+        style={{ display: 'block' }}>
+            <option value="" label="">
+            </option>
+            <option value="qom" label="Qom">
+              qom
+              </option>
+              <option value="tehran" label="Tehran">
+              tehran
+              </option>
+              <option value="isfahan" label="Isfahan">
+              isfahan
+              </option>
+          </select>
+        </Stack>
+        </Grid>
+        </Grid>
+        <Grid container>
+        <Grid sm={3}>
+        <Stack>
+        <label>Address</label>
+        <Field as="textarea" name="Address" value={values.Address} />
+        </Stack>
+        </Grid>
+        <Grid>
+        <Stack>
+        <label>Postal code</label>
+          <Field type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value={values.postalCard}  />
+        </Stack>
+        </Grid>
+        </Grid>
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
