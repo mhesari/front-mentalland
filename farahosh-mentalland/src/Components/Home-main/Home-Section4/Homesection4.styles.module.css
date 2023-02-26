@@ -58,6 +58,9 @@ color: #000B0C;
     .section4{
         width: 85%;
     }
+    .section4_context{
+        width: 715px;
+    }
     
 }
 @media only screen and (max-width:1200px){
