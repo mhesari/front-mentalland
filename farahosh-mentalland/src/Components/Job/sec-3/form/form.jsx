@@ -7,6 +7,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import Yup from 'yup';
+import "./form.style.css"
 
 const Basic = () => {
   const [value, setValue] = React.useState(dayjs(''));
@@ -47,10 +48,10 @@ const Basic = () => {
       }) => (
         <form onSubmit={handleSubmit}>
         <Grid container>
-          <Grid md={3}>
+          <Grid sm={12} md={4}>
              <Stack direction={"column"}>
-        <label>Name</label>
-        <Field
+        <label className="input_title">Name</label>
+        <Field className="input_field"
             type="text"
             name="Name"
             onChange={handleChange}
@@ -58,10 +59,10 @@ const Basic = () => {
           />
         </Stack>
           </Grid>
-          <Grid md={3}>
+          <Grid sm={12} md={4}>
              <Stack>
-        <label>last Name</label>
-            <Field
+        <label className="input_title">last Name</label>
+            <Field className="input_field"
             type="text"
             name="lastName"
             onChange={handleChange}
@@ -69,12 +70,12 @@ const Basic = () => {
           />
         </Stack>
           </Grid>
-          <Grid md={3}>
+          <Grid sm={12} md={4}>
            <Stack>
-        <label>Date of birth</label>
+        <label className="input_title">Date of birth</label>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Grid container>
-          <Grid md={4}> <DatePicker
+          <Grid md={3}> <DatePicker  className="input_date"
           views={['year']}
           label="Year"
           value={value}
@@ -83,8 +84,8 @@ const Basic = () => {
           }}
           renderInput={(params) => <TextField {...params} helperText={null} />}
         /></Grid>
-          <Grid md={6}>
-          <DatePicker
+          <Grid md={4}>
+          <DatePicker   className="input_date"
           views={['month']}
           label="month"
           value={value}
@@ -94,7 +95,7 @@ const Basic = () => {
           renderInput={(params) => <TextField {...params} helperText={null} />}
         />
           </Grid>
-          <Grid md={6}> <DatePicker
+          <Grid md={4}> <DatePicker   className="input_date"
           views={['day']}
           label="day"
           value={value}
@@ -109,10 +110,10 @@ const Basic = () => {
           </Grid>
         </Grid>
         <Grid container>
-        <Grid md={3}>
+        <Grid sm={12} md={4}>
         <Stack>
-        <label>Sex</label>
-          <select name="sex" value={values.sex}  onChange={handleChange}
+        <label className="input_title">Sex</label>
+          <select  className="input_field" name="sex" value={values.sex}  onChange={handleChange}
         onBlur={handleBlur}
         style={{ display: 'block' }}>
             <option value="" label="">
@@ -126,28 +127,28 @@ const Basic = () => {
           </select>
         </Stack>
         </Grid>
-          <Grid md={3}>
+          <Grid sm={12} md={4}>
             <Stack>
-              <label>Phone number</label>
-              <Field type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  name="phoneNumber"
+              <label className="input_title">Phone number</label>
+              <Field  className="input_field" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  name="phoneNumber"
             onChange={handleChange}
             onBlur={handleBlur} />
             </Stack>
           </Grid>
-          <Grid md={3}>
+          <Grid sm={12} md={4}>
             <Stack>
-              <label>Mobile number</label>
-              <Field type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  name="mobileNumber"
+              <label className="input_title">Mobile number</label>
+              <Field  className="input_field" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  name="mobileNumber"
             onChange={handleChange}
             onBlur={handleBlur} />
             </Stack>
           </Grid>
         </Grid>
         <Grid container>
-          <Grid sm={3}>
+          <Grid sm={12} sm={4}>
              <Stack>
-        <label>Email address</label>
-          <Field
+        <label className="input_title">Email address</label>
+          <Field  className="input_field"
             type="email"
             name="email"
             onChange={handleChange}
@@ -157,10 +158,10 @@ const Basic = () => {
           {errors.email && touched.email && errors.email}
         </Stack>
         </Grid>
-          <Grid sm={3}>
+          <Grid sm={12} md={4}>
           <Stack>
-        <label>Country</label>
-          <select name="country" value={values.country}  onChange={handleChange}
+        <label className="input_title">Country</label>
+          <select  className="input_field" name="country" value={values.country}  onChange={handleChange}
         onBlur={handleBlur}
         style={{ display: 'block' }}>
             <option value="" label="">
@@ -174,10 +175,10 @@ const Basic = () => {
           </select>
         </Stack>
         </Grid>
-        <Grid sm={3}>
+        <Grid sm={12} md={4}>
         <Stack>
-        <label>City</label>
-          <select name="city" value={values.city}  onChange={handleChange}
+        <label className="input_title"> City</label>
+          <select  className="input_field" name="city" value={values.city}  onChange={handleChange}
         onBlur={handleBlur}
         style={{ display: 'block' }}>
             <option value="" label="">
@@ -196,23 +197,23 @@ const Basic = () => {
         </Grid>
         </Grid>
         <Grid container>
-        <Grid sm={3}>
+        <Grid sm={12} md={4}>
         <Stack>
-        <label>Address</label>
+        <label className="input_title">Address</label>
         <Field as="textarea" name="Address" value={values.Address} />
         </Stack>
         </Grid>
         <Grid>
         <Stack>
-        <label>Postal code</label>
-          <Field type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value={values.postalCard}  />
+        <label className="input_title">Postal code</label>
+          <Field  className="input_field" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value={values.postalCard}  />
         </Stack>
         </Grid>
         </Grid>
-          <button type="submit" disabled={isSubmitting}>
-            Submit
+          <button className="sub_btn" type="submit" disabled={isSubmitting}>
+            Send
           </button>
-          <button type="reset" disabled={isSubmitting}>
+          <button className="reset_btn" type="reset" disabled={isSubmitting}>
             Cancel
           </button>
         </form>
