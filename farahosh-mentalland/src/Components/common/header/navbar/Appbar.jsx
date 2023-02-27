@@ -7,6 +7,7 @@ import {ButtonCustomised} from "../../utils/ButtonCustomized"
 import css from  "./style.module.css"
 import {FaFacebookF , FaInstagram , FaLinkedinIn , FaWhatsapp , FaTwitter} from "react-icons/fa"
 import flag from "../../../../assests/image/En.png"
+import { Link } from "react-router-dom";
 import { Searchs , Searchs2 , SearchIconWrapper , StyledInputBase} from "../../utils/CustomizedSearch"
 
 
@@ -64,8 +65,8 @@ export default function PrimarySearchAppBar() {
               xl:"flex"
             } , alignItems:"center" , justifyContent:"space-between" , width:"100%"}}>
             <Box>
-              <ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px" , mx:2}}>Login</ButtonCustomised>
-              <ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px"}}>Cart</ButtonCustomised>
+            <Link to={{ pathname: "http://testy.frahosh.com/login" }}><ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px" , mx:2}}>Login</ButtonCustomised></Link>
+            <Link to="/Art"><ButtonCustomised sx={{background:"#02979D",fontFamily:"Gilroy-Bold" , color:"white" , width:"132px" , height:"40px"}}>Cart</ButtonCustomised></Link>
               
             </Box>
             <select name="cars" id="cars" className={css.select}>
