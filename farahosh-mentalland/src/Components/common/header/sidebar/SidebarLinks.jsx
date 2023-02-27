@@ -5,10 +5,30 @@ import flag from "../../../../assests/image/En.png"
 import {BiLogIn ,BiSearchAlt} from "react-icons/bi"
 import {ButtonCustomised} from "../../utils/ButtonCustomized"
 import {  Searchs2 , SearchIconWrapper , StyledInputBase} from "../../utils/CustomizedSearch"
+import {useNavigate ,Link} from "react-router-dom"
 import {SlHandbag} from "react-icons/sl"
 import {FaFacebookF , FaInstagram , FaLinkedinIn , FaWhatsapp , FaTwitter} from "react-icons/fa"
 const SidebarLinks = ()=>{
     const [open , setOpen ] = useState(true)
+    const navigate = useNavigate()
+    const listlink = [
+        {
+            name:"Home",
+            link:"/",
+        },
+        {
+            name:"Our Services",
+            link:"page2",
+        },
+        {
+            name:"About",
+            link:"aboutus",
+        },
+        {
+            name:"Contact us",
+            link:"Contactus",
+        }
+    ]
     return(
         <>
             <Box sx={{display:"flex" , alignItems:"center",justifyContent:"space-around" }}>
@@ -39,16 +59,19 @@ const SidebarLinks = ()=>{
                         </ListItemButton>
                 </ListItem>
                 {
-                    ["Home","Our Services","About","Contact us"].map((text,index)=>(
-                        <ListItem key={text} disablePadding sx={{display:"block" ,"&:hover":{
+                    listlink.map((item,index)=>(
+                        <ListItem key={index} disablePadding sx={{display:"block" ,"&:hover":{
                             background:"rgba(0,0,0,0.1)"
-                        }}}> 
-                            <ListItemButton sx={{
-                                minHeight:40,
-                                pl:3
-                            }}>
-                                <ListItemText primary={text}  sx={{opacity:open?1:0 }} />
-                            </ListItemButton>
+                            
+                        }}} onClick={()=>navigate(item.link)}> 
+                          
+                                <ListItemButton sx={{
+                                    minHeight:40,
+                                    pl:3
+                                }}>
+                                    <ListItemText primary={item.name}  sx={{opacity:open?1:0 }}   />
+                                </ListItemButton>
+                       
                         </ListItem>
                     ))
                 }

@@ -1,8 +1,12 @@
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import { Box  , List  ,ListItemText, Typography , FormControl, InputLabel , InputBase , alpha , styled, ListItem, ListItemButton} from "@mui/material";
+import { Box  , List  ,ListItemText, Typography ,FormHelperText , FormControl, InputLabel , InputBase , alpha , styled, ListItem, ListItemButton} from "@mui/material";
 import SocialIcons from "../utils/SocialIcons";
 import {ButtonCustomised} from "../utils/ButtonCustomized"
-
+import {  toast } from 'react-toastify';
+import { useFormik } from 'formik';
+import * as Yup from "yup"
+import axios from "axios"
+import {useNavigate} from "react-router-dom"
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
       marginTop: theme.spacing(5),
@@ -40,9 +44,61 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     },
   }));
   
-
+ 
+  const listlink = [
+      {
+          name:"Art",
+          link:"Art",
+      },
+      {
+          name:"Psychology",
+          link:"page3",
+      },
+      {
+          name:"Business",
+          link:"smallpage",
+      },
+      {
+          name:"Art Adult",
+          link:"artsAdults",
+      },
+      {
+        name:"Business Adults",
+        link:"page4",
+    },
+  ] 
 
 const Footer = ()=>{
+  const navigate = useNavigate()
+    const validationSchema = Yup.object({
+        name:Yup.string().required("name is required"),
+        email:Yup.string().email("invalid email address").required("email is required"),
+        message:Yup.string().required("message is required")
+    })
+    const formik = useFormik({
+        initialValues: {
+          name: '',
+          email: '',
+          message: '',
+        },
+        validationSchema,
+        onSubmit: async (values ) => {
+
+          axios.post("http://testy.frahosh.com/api/const/postmessage",{...values , _token:"{{csrf_token()}}"})
+          .then(res => {
+            console.log(res)
+            if(res.status===200){
+              toast.success("This message was  sent successfuly",{theme:"colored"})
+            }else{
+              toast.warning("This message was not sent successfuly",{theme:"colored"})
+            }
+          })
+          .catch(err => {
+            console.log(err)
+            toast.error("This message was not sent successfuly",{theme:"colored"})
+          })
+        },
+      });
     return (
         <>
             <Grid container sx={{width:1,marginTop:{xs:"50px",lg:"80px"} , background:`linear-gradient(to right , rgba(2, 151, 157,1) ,rgba(0, 137, 142,1))` ,zIndex:"1", boxSizing:'border-box' ,px:{xs:0,md:2,lg:5},position:"relative" }}>
@@ -66,6 +122,7 @@ const Footer = ()=>{
                            <Box
                                 component="form"
                                 noValidate
+                                onSubmit={formik.handleSubmit}
                                 sx={{
                                     gridTemplateColumns: { sm: '1fr 1fr' },
                                     gap: 2,
@@ -76,25 +133,31 @@ const Footer = ()=>{
                                 }}
                             >
 
-                               <FormControl variant="standard">
-                                    <InputLabel  shrink htmlFor="bootstrap-input" sx={{color:"white",fontSize:"18px" ,lineHeight:"40px" , fontFamily:"Gilroy-regular" }}>
+                               <FormControl variant="standard" error={formik.touched.name && Boolean(formik.errors.name)}>
+                                    <InputLabel shrink htmlFor="bootstrap-input" sx={{color:"white",fontSize:"18px" ,lineHeight:"40px" , fontFamily:"Gilroy-regular" }}>
                                         Name
                                     </InputLabel>
-                                    <BootstrapInput fullWidth id="bootstrap-input1" />
+                                    <BootstrapInput onChange={formik.handleChange}
+                                       value={formik.values.name} name="name"  fullWidth id="bootstrap-input1" />
+                                {formik.touched.name && formik.errors.name && (<FormHelperText>{formik.errors.name}</FormHelperText>)}
                                </FormControl>
-                               <FormControl variant="standard">
+                               <FormControl variant="standard" error={formik.touched.email && Boolean(formik.errors.email)}>
                                     <InputLabel  shrink htmlFor="bootstrap-input" sx={{color:"white",fontSize:"18px" ,lineHeight:"40px" , fontFamily:"Gilroy-regular"}}>
                                         Email
                                     </InputLabel>
-                                    <BootstrapInput  id="bootstrap-input2" />
+                                    <BootstrapInput onChange={formik.handleChange}
+                                         value={formik.values.email} name="email"  id="bootstrap-input2" />
+                                    {formik.touched.email && formik.errors.email && (<FormHelperText>{formik.errors.email}</FormHelperText>)}
                                </FormControl>
-                               <FormControl >
-                                    <InputLabel shrink htmlFor="bootstrap-input" sx={{color:"white",fontSize:"18px" ,lineHeight:"40px" , fontFamily:"Gilroy-regular"}}>
+                               <FormControl error={formik.touched.message && Boolean(formik.errors.message)}>
+                                    <InputLabel  shrink htmlFor="bootstrap-input" sx={{color:"white",fontSize:"18px" ,lineHeight:"40px" , fontFamily:"Gilroy-regular"}}>
                                         Message
                                     </InputLabel>
-                                    <BootstrapInput fullWidth multiline rows={7}  id="bootstrap-input3"/>
-                               </FormControl>
-                               <ButtonCustomised sx={{background:"white" , width:"220px" , height:"50px" ,mt:3}}>Send Message</ButtonCustomised>
+                                    <BootstrapInput onChange={formik.handleChange}
+                                          value={formik.values.message} name="message"  fullWidth multiline rows={7}  id="bootstrap-input3"/>
+                                    {formik.touched.message && formik.errors.message && (<FormHelperText>{formik.errors.message}</FormHelperText>)}   
+                            </FormControl>
+                               <ButtonCustomised  type="submit" sx={{background:"white" , width:"220px" , height:"50px" ,mt:3}}>Send Message</ButtonCustomised>
                             </Box>
                         </Grid>
                     </Grid>
@@ -113,15 +176,15 @@ const Footer = ()=>{
                                 }}
                               
                                 >
-                                {["Home","Our Service","About","Contact us","Article"  ].map((sectionId) => (
+                                {listlink.map((sectionId) => (
                                   
                                     
                                             
-                                            <ListItem key={sectionId} sx={{mb:5 , color:"#fff" ,"&:hover":{
+                                            <ListItem key={sectionId.name} sx={{mb:5 , color:"#fff",cursor:"pointer" ,"&:hover":{
                                                 fontWeight:"bold"
-                                            }}}>
+                                            }}} onClick={()=>navigate(sectionId.link)}>
                                                 <ListItemButton sx={{ textAlign:{lg:"left",xs:"center"}}}>
-                                                   <ListItemText primary={<Typography variant="p">{sectionId}</Typography>} />
+                                                   <ListItemText primary={<Typography variant="p">{sectionId.name}</Typography>} />
                                                 </ListItemButton>
                                             </ListItem>
                                     
