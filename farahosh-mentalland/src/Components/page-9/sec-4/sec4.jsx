@@ -9,7 +9,45 @@ import CardCom from "../card-pattern.jsx/cardCom";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { MainTitle } from "../buttons-form/ButtonsF";
 import { Typography } from "@mui/material";
+import {useEffect , useState} from "react"
+import axios from "axios"
+import {toast} from "react-toastify"
 const Sec4 = () => {
+  const [jobs , setJobs]=useState([])
+  useEffect(()=>{
+      const getjobs = async ()=>{
+        try{
+            const response = await axios.get(
+              "http://testy.frahosh.com/api/const/getjobs",
+              {
+                params:{
+                  title:"psychologist",
+                  company:"farahosh",
+                  remote:"parttime",
+                  date:"20130105",
+                  jobtime:"afternoon",
+                  salary:"21000",
+                  description:"i lsdfsdf",
+
+                }
+              }
+            ).then((res)=>{
+              
+              if(res.status===200){
+                setJobs(res.data)
+                toast.success("Your request was sent successfully",{theme:"colored"})
+              }
+            })
+        }catch(err){
+          console.log("error console ")
+            console.log(err)
+            toast.error("Your request was not sent",{theme:"colored"})
+
+        }
+      }
+      getjobs();
+  },[])
+  
   return (
     
       <Box sx={{position:"relative",width:"90%",margin:"0px auto"}} >

@@ -84,19 +84,26 @@ const Footer = ()=>{
         validationSchema,
         onSubmit: async (values ) => {
 
-          axios.post("http://testy.frahosh.com/api/const/postmessage",{...values , _token:"{{csrf_token()}}"})
-          .then(res => {
-            console.log(res)
-            if(res.status===200){
-              toast.success("This message was  sent successfuly",{theme:"colored"})
-            }else{
-              toast.warning("This message was not sent successfuly",{theme:"colored"})
-            }
-          })
-          .catch(err => {
-            console.log(err)
-            toast.error("This message was not sent successfuly",{theme:"colored"})
-          })
+        
+        axios({
+          method: 'post',
+          data: {
+            Name: values.name,
+            Email: values.email,
+            Message: values.message,
+          },
+          url: `http://testy.frahosh.com/api/const/postmessage`
+        })
+        .then(response => {
+          console.log(response)
+          if(response.status===201){
+            toast.success("Your Message was sent successfuly",{theme:"colored"})
+          }
+        })
+        .catch(error => {
+          console.log('ERROR', error)
+          toast.error("Your Message was not sent ",{theme:"colored"})
+        })
         },
       });
     return (
