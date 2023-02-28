@@ -17,7 +17,8 @@ const Sec4 = () => {
           ).then((res)=>{
             console.log(res)
             if(res.status===200){
-              setJobs(res.data)
+              setJobs(res.data.data)
+              console.log("jobs",jobs)
 
             }
             if(res.status===404){
@@ -48,10 +49,25 @@ const Sec4 = () => {
               (jobs.length>0) ?(<>
                 {
                   jobs.map((item , index)=>(
-                    <CardCom key={index} />
+                    <CardCom 
+                      key={index}
+                      salary={item.salary}
+                      title={item.title}
+                      category={item.category}
+                      jobtype={item.jobtype}
+                      education={item.education}
+                      exp={item.exp}
+                      facilities={item.facilities}
+                      company={item.company}
+                      city={item.city}
+                      remote={item.remote}
+                      intership={item.intership} 
+                      date={item.date} 
+                      description={item.description}
+                    />
                   ))
                 }
-              </>):(<Typography sx={{textAlign:"center",p:10}}>There is no job</Typography>)
+              </>):(<Typography  sx={{ color: "#024A9D", fontFamily: "Gilroy-Medium", fontSize: { lg: "25px", md: "15px" ,xs:"12px"}, lineHeight: "40sp" }}>There is no job</Typography>)
               }
            </Grid>
         </Box>

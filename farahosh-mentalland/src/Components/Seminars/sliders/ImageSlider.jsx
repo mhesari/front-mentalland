@@ -9,12 +9,15 @@ import { Navigation} from "swiper";
 import {useTheme} from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { Typography } from "@mui/material";
-
+import img1 from "../../../assests/image/page-2/Rectangle 22.png"
+import img2 from "../../../assests/image/page-2/Rectangle 23.png"
+import img3 from "../../../assests/image/page-2/Rectangle 24.png"
 const ImageSlider = ({data,title , text}) => {
     const theme = useTheme();
     var matches = 3;
     matches = useMediaQuery(theme.breakpoints.down('md'))?1:false;
     matches = matches?matches:3;
+    const listimg = [img1 , img2 ,img3]
     
 
     return ( 
@@ -26,7 +29,7 @@ const ImageSlider = ({data,title , text}) => {
                                             {
                                                 data.map((item ,index)=>(
                                                     <SwiperSlide key={index} virtualIndex={index}>
-                                                        <Card  img={item.img} userInfo={item.userInfo} smallInfo={item.smallInfo} date={item.date} time={item.time} caption={item.caption}/>
+                                                        <Card  img={listimg[index%3]} userInfo={item.guestsintro} smallInfo={item.ticket} date={item.date} time={item.time} caption={item.description}/>
                                                     </SwiperSlide>
                                                 ))
                                             }            

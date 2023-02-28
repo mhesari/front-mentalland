@@ -9,9 +9,22 @@ import {FaFacebookF , FaInstagram , FaLinkedinIn , FaWhatsapp , FaTwitter} from 
 import flag from "../../../../assests/image/En.png"
 import { Link } from "react-router-dom";
 import { Searchs , Searchs2 , SearchIconWrapper , StyledInputBase} from "../../utils/CustomizedSearch"
-
+import { useState ,useEffect} from "react";
 
 export default function PrimarySearchAppBar() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -39,7 +52,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box >
-      <AppBar position="static" sx={{background:"none",boxShadow:"none" , p:0,m:0}}>
+      <AppBar position="static" sx={{background:"none",display:scrollPosition>=60?"none":"",boxShadow:"none" , p:0,m:0}}>
         <Toolbar sx={{width:"100vw" ,m:0}}>
           <Box sx={{display:"flex",width:"100%" , alignItems:"center",justifyContent:"space-between" ,pr:6 , pl:2}}>
           <IconButton

@@ -16,6 +16,7 @@ import Position from "./Routes/Position"
 import Aboutus from "./Routes/Aboutus"
 import ListAdults from "./Routes/ListAdults"
 import Job from "./Routes/Job";
+import Seminars from "./Routes/Seminars";
 
 const Nopage =() => {
   
@@ -49,6 +50,7 @@ const PageContent = ()=>{
                 <Route path="aboutus" element={<Aboutus />}/>
                 <Route path="Job" element={<Job />} />
                 <Route path="listadults" element={<ListAdults />}/>
+                <Route path="seminars" element={<Seminars />}/>
 
 
             </Routes>

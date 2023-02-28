@@ -67,6 +67,7 @@ const formik = useFormik({
       
         axios({
           method: 'post',
+          headers:{"Accept": "*/*"},
           data: {
             field: values.field,
             psychologist: values.Psychologist,

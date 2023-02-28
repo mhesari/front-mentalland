@@ -5,7 +5,7 @@ import Button from "../../buttons/button.component.jsx";
 const Slider2 = ()=>{
     return (
             <Box sx={{background:"linear-gradient(to right,rgb(187, 227, 229),rgb(235, 247, 247))",py:4}}>
-                <Box className="slide1 page2" sx={{width:"75%",maxWidth:"1800px",margin:"0px auto" , overflowX:"hidden"}}>
+                <Box className="slide1 page2" sx={{width:{xs:"90%",sm:"75%"},background:"none",maxWidth:"1800px",height:{xs:'700px',sm:"800px",md:"700px"},margin:"0px auto" , overflowX:"hidden"}}>
                     <ImageSlider 
                         data={data}
                         title="Upcoming Public Seminars & Events"
